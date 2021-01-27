@@ -1,10 +1,22 @@
 /* Global */
 :root {
   /* Color */
+  --color-white: #ffffff;
+  --color-light-white: #eeeeee;
+  --color-dark-white: #bdbdbd;
+  --color-light-grey: #7c7979;
+  --color-grey: #616161;
+  --color-dark-grey: #4d4d4d;
+  --color-black: #000000;
+  --color-yellow: #fff7d1;
+  --color-pink: #fe918d;
+  --color-light-blue: #bffaff;
+  --color-blue: #61a2fc;
+  --color-purple: #a5b9f4;
 
   /* Font size */
-  --font-large: 32px;
-  --font-medium: 24px;
+  --font-large: 48px;
+  --font-medium: 28px;
   --font-regular: 16px;
   --font-small: 14px;
   --font-micro: 12px;
@@ -20,4 +32,91 @@
 /* Uriversal tags */
 * {
   box-sizing: border-box;
+}
+body {
+  margin: 0;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+}
+ul {
+  list-style: none;
+}
+
+/* Typotgraphy */
+h2 {
+}
+header > div {
+  max-width: 1080px;
+  /* padding: 20px 0; */
+  margin: 0 auto;
+}
+
+/* Home */
+header {
+  background: url("../images/bg.png") no-repeat center/cover;
+}
+header > div {
+  padding-bottom: 20px;
+}
+header > div * {
+  color: var(--color-dark-grey);
+  text-align: center;
+}
+/* Home nav */
+header > div > div {
+  position: sticky;
+  left: 0;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: transparent;
+  padding: 20px 0;
+  margin-bottom: 80px;
+  text-transform: uppercase;
+}
+header > div > div h1 a {
+  font-size: 18px;
+  font-weight: 900;
+}
+header > div > div nav ul {
+  display: flex;
+}
+header > div > div nav ul li {
+  margin-left: 30px;
+}
+header > div > div nav ul li a {
+  display: block;
+  font-size: var(--font-regular);
+  font-weight: var(--weight-reaular);
+}
+header > div > div nav ul li a:hover {
+  color: var(--color-white);
+}
+/* Home ul */
+header > div > ul li i {
+  font-size: var(--font-medium);
+  margin-bottom: 50px;
+}
+header > div > ul li h2 {
+  color: var(--color-white);
+  font-size: var(--font-large);
+  font-weight: var(--weight-bold);
+  letter-spacing: -1px;
+  line-height: 58px;
+  margin-bottom: 30px;
+}
+header > div > ul li p {
+  margin-bottom: 130px;
+}
+/* Home span */
+header > div > span {
+  display: block;
+  font-size: 18px;
+}
+header > div > span a:last-of-type {
+  font-weight: 900;
+  margin-left: 5px;
 }
