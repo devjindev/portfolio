@@ -8,11 +8,13 @@
   --color-grey: #616161;
   --color-dark-grey: #4d4d4d;
   --color-black: #000000;
-  --color-yellow: #fff7d1;
+  --color-light-yellow: #fff7d1;
+  --color-yellow: #fdf3be;
   --color-pink: #fe918d;
+  --color-dark-pink: #ff6853;
   --color-light-blue: #bffaff;
   --color-blue: #61a2fc;
-  --color-purple: #a5b9f4;
+  --color-purple: #7b9af8;
 
   /* Font size */
   --font-large: 48px;
@@ -47,13 +49,27 @@ ul {
 }
 
 /* Typotgraphy */
-h2 {
-  color: var(--color-blue);
+body > :not(#home) h2 {
+  color: var(--color-purple);
   font-size: var(--font-medium);
   text-transform: uppercase;
   text-align: center;
-  margin-bottom: 30px;
+  text-decoration: underline;
+  margin-bottom: 50px;
 }
+section.profileArea,
+section.skillsArea > div,
+section.projectsArea {
+  max-width: 1080px;
+  margin: 0 auto;
+  padding: 70px 0;
+}
+/* hr {
+  width: 3%;
+  min-width: 50px;
+  margin: 0 auto 35px;
+  border-top: 1px solid var(--color-dark-white);
+} */
 
 /* Home */
 header {

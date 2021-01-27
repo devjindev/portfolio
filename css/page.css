@@ -1,0 +1,39 @@
+/* Profile */
+section.profileArea figure {
+  display: flex;
+  justify-content: space-around;
+  padding: 0 10%;
+}
+section.profileArea figure img {
+  width: 35%;
+  border-radius: 10px;
+}
+section.profileArea figure figcaption {
+  width: 60%;
+  margin-left: 5%;
+  padding: 25px 0;
+}
+section.profileArea figure figcaption dl dt {
+  margin-bottom: 25px;
+}
+section.profileArea figure figcaption dl dt span:first-of-type {
+  font-size: 18px;
+}
+section.profileArea figure figcaption dl dt span:last-of-type {
+  color: var(--color-light-grey);
+  font-size: var(--font-small);
+  margin-left: 1%;
+}
+section.profileArea figure figcaption dl dd {
+  font-size: var(--font-small);
+  font-weight: var(--weight-light);
+  line-height: 16px;
+}
+section.profileArea figure figcaption dl dd p:not(:last-of-type) {
+  margin-bottom: 15px;
+}
+
+/* Skills */
+section.skillsArea {
+  background-color: var(--color-light-white);
+}
