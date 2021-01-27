@@ -1,13 +1,23 @@
 /* Global */
 :root {
   /* Color */
+
   /* Font size */
   --font-large: 32px;
   --font-medium: 24px;
   --font-regular: 16px;
   --font-small: 14px;
   --font-micro: 12px;
+
   /* Font weight */
+  --weight-bold: 700;
+  --weight-reaular: 400;
+  --weight-light: 300;
 
   /* Size */
+}
+
+/* Uriversal tags */
+* {
+  box-sizing: border-box;
 }
