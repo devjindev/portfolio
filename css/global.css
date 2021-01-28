@@ -45,6 +45,9 @@ a {
   color: var(--color-dark-grey);
   text-decoration: none;
 }
+a:hover {
+  color: var(--color-dark-grey);
+}
 ul {
   list-style: none;
 }
@@ -61,9 +64,9 @@ body > :not(#home) h2 {
 section.profileArea,
 section.skillsArea > div,
 section.projectsArea {
-  max-width: 1080px;
+  max-width: 1320px;
   margin: 0 auto;
-  padding: 60px 0;
+  padding: 60px 3%;
 }
 
 /* Home */
@@ -71,9 +74,9 @@ header {
   background: url("../images/bg.png") no-repeat center/cover;
 }
 header > div {
-  max-width: 1080px;
+  max-width: 1320px;
   margin: 0 auto;
-  padding-bottom: 30px;
+  padding: 0 3% 25px;
 }
 header > div * {
   text-align: center;
@@ -87,8 +90,8 @@ header > div > div {
   justify-content: space-between;
   align-items: center;
   background-color: transparent;
-  padding: 30px 0;
-  margin-bottom: 60px;
+  padding: 25px 0;
+  margin-bottom: 65px;
   text-transform: uppercase;
 }
 header > div > div h1 a {
@@ -128,7 +131,7 @@ header > div > ul li p {
   font-size: var(--font-small);
   font-weight: var(--weight-light);
   line-height: 16px;
-  margin-bottom: 110px;
+  margin-bottom: 116px;
 }
 /* Home span */
 header > div > span {

@@ -6,6 +6,8 @@ section.profileArea > figure {
 }
 section.profileArea > figure img {
   width: 35%;
+  height: 35%;
+  min-width: 300px;
   border-radius: 10px;
 }
 section.profileArea > figure figcaption {
@@ -39,6 +41,7 @@ section.skillsArea {
 }
 section.skillsArea > div ul:first-of-type {
   padding: 0 10%;
+  margin-bottom: 20px;
 }
 /* Skills button */
 section.skillsArea > div ul:first-of-type {
@@ -48,7 +51,7 @@ section.skillsArea > div ul:first-of-type {
 section.skillsArea > div ul:first-of-type li button {
   border: 1px solid var(--color-dark-white);
   font-size: var(--font-regular);
-  width: 173px;
+  width: 150px;
   padding: 5px 0;
   cursor: pointer;
 }
@@ -89,17 +92,20 @@ section.skillsArea > div ul:first-of-type li button:hover span {
 section.skillsArea > div ul:last-of-type {
   display: flex;
   flex-wrap: wrap;
-  padding: 0 20%;
+  background-color: var(--color-white);
+  border-radius: 4px;
+  padding: 0 5%;
 }
 section.skillsArea > div ul:last-of-type li {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 25%;
-  margin-top: 30px;
+  width: 12.66%;
+  margin: 17px 2%;
+  text-align: center;
 }
 section.skillsArea > div ul:last-of-type li i {
-  font-size: 70px;
+  font-size: 90px;
   margin-bottom: 10px;
 }
 section.skillsArea > div ul:last-of-type li:nth-of-type(1) i {
@@ -130,9 +136,9 @@ section.skillsArea > div ul:last-of-type li span {
   margin-bottom: 10px;
 }
 section.skillsArea > div ul:last-of-type li div.progress {
-  width: 75%;
+  width: 100%;
   line-height: 3px;
-  background-color: var(--color-white);
+  background-color: var(--color-light-white);
 }
 section.skillsArea > div ul:last-of-type li div div.progress-bar {
   background-color: var(--color-dark-grey);
