@@ -201,21 +201,28 @@ section.projectsArea > ul li a:first-of-type div span {
   font-weight: var(--weight-light);
 }
 /* Projects github */
+section.projectsArea > ul li a:last-of-type,
+section.projectsArea > ul li a:last-of-type i {
+  color: var(--color-dark-grey);
+  font-size: var(--font-small);
+  font-weight: var(--weight-light);
+  background-color: transparent;
+  transition: all 0.2s ease-in;
+}
 section.projectsArea > ul li a:last-of-type {
   display: block;
   width: 22%;
   margin: 0 auto;
   padding: 7px 0;
   text-align: center;
-  color: var(--color-white);
-  font-size: var(--font-small);
-  font-weight: var(--weight-light);
-  background-color: var(--color-light-grey);
+  border: 1px solid var(--color-dark-grey);
   border-radius: 3px;
 }
 section.projectsArea > ul li a:last-of-type i {
-  color: var(--color-white);
-  font-size: var(--font-small);
-  font-weight: var(--weight-light);
   margin-left: 2px;
+}
+section.projectsArea > ul li a:last-of-type:hover,
+section.projectsArea > ul li a:last-of-type:hover i {
+  color: var(--color-white);
+  background-color: var(--color-dark-grey);
 }
