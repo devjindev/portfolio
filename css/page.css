@@ -191,13 +191,14 @@ section.projectsArea > ul li a:first-of-type:hover div {
 section.projectsArea > ul li a:first-of-type:hover div {
   opacity: 0.7;
 }
+section.projectsArea > ul li a:first-of-type div * {
+  color: var(--color-white);
+}
 section.projectsArea > ul li a:first-of-type div h3 {
   font-size: var(--font-medium);
-  color: var(--color-white);
   margin-bottom: 10px;
 }
 section.projectsArea > ul li a:first-of-type div span {
-  color: var(--color-white);
   font-weight: var(--weight-light);
 }
 /* Projects github */

@@ -42,18 +42,19 @@ body {
   padding: 0;
 }
 a {
+  display: block;
   color: var(--color-dark-grey);
   text-decoration: none;
 }
 a:hover {
-  color: var(--color-dark-grey);
+  color: unset;
 }
 ul {
   list-style: none;
 }
 
 /* Typotgraphy */
-body > :not(#home) h2 {
+body > :not(#home, #contact) h2 {
   font-size: var(--font-medium);
   font-weight: var(--weight-bold);
   text-transform: uppercase;
@@ -71,7 +72,7 @@ section.projectsArea {
 
 /* Home */
 header {
-  background: url("../images/bg.png") no-repeat center/cover;
+  background: url("../images/bg_01.png") no-repeat center/cover;
 }
 header > div {
   max-width: 1320px;
@@ -133,12 +134,65 @@ header > div > ul li p {
   line-height: 16px;
   margin-bottom: 116px;
 }
-/* Home span */
+/* Home sns */
 header > div > span {
   display: block;
   font-size: 18px;
 }
+header > div > span a {
+  display: inline-block;
+}
 header > div > span a:last-of-type {
   font-weight: 900;
   margin-left: 1%;
+}
+
+/* Contact */
+footer {
+  background: url("../images/bg_02.png") no-repeat center/cover;
+}
+footer > div {
+  max-width: 1320px;
+  margin: 0 auto;
+  padding: 70px 6% 20px;
+}
+footer > div * {
+  color: var(--color-light-white);
+  text-align: center;
+}
+footer > div h2 {
+  text-transform: uppercase;
+  font-size: var(--font-medium);
+  margin-bottom: 30px;
+}
+footer > div ul li:nth-of-type(1) {
+  font-size: var(--font-large);
+  margin-bottom: 30px;
+}
+footer > div ul li:nth-of-type(1) a {
+  color: var(--color-pink);
+}
+footer > div ul li:nth-of-type(1) a:hover {
+  transform: scale(1.1);
+}
+footer > div ul li:nth-of-type(2) {
+  font-size: var(--font-medium);
+  margin-bottom: 60px;
+}
+footer > div ul li:nth-of-type(2) a {
+  display: inline-block;
+}
+footer > div ul li:nth-of-type(2) a:first-of-type:hover i {
+  color: #00cc66;
+}
+footer > div ul li:nth-of-type(2) a:last-of-type {
+  margin-left: 1%;
+}
+footer > div ul li:nth-of-type(2) a:last-of-type:hover {
+  color: #ff771d;
+}
+footer > div ul li:nth-of-type(3) {
+  color: var(--color-dark-white);
+  font-size: var(--font-micro);
+  font-weight: var(--weight-light);
 }
