@@ -37,7 +37,7 @@ section.profileArea > figure figcaption dl dd p:not(:last-of-type) {
 section.skillsArea {
   background-color: var(--color-light-white);
 }
-section.skillsArea > div ul {
+section.skillsArea > div ul:first-of-type {
   padding: 0 10%;
 }
 /* Skills button */
@@ -89,6 +89,7 @@ section.skillsArea > div ul:first-of-type li button:hover span {
 section.skillsArea > div ul:last-of-type {
   display: flex;
   flex-wrap: wrap;
+  padding: 0 20%;
 }
 section.skillsArea > div ul:last-of-type li {
   display: flex;
@@ -98,7 +99,7 @@ section.skillsArea > div ul:last-of-type li {
   margin-top: 30px;
 }
 section.skillsArea > div ul:last-of-type li i {
-  font-size: 80px;
+  font-size: 70px;
   margin-bottom: 10px;
 }
 section.skillsArea > div ul:last-of-type li:nth-of-type(1) i {
