@@ -7,7 +7,6 @@ section.profileArea > figure {
 section.profileArea > figure img {
   width: 35%;
   height: 35%;
-  min-width: 300px;
   border-radius: 10px;
 }
 section.profileArea > figure figcaption {
@@ -50,7 +49,7 @@ section.skillsArea > div ul:first-of-type {
 }
 section.skillsArea > div ul:first-of-type li button {
   border: 1px solid var(--color-dark-white);
-  font-size: var(--font-regular);
+  font-size: var(--font-small);
   width: 150px;
   padding: 5px 0;
   cursor: pointer;
@@ -66,22 +65,23 @@ section.skillsArea > div ul:first-of-type li:not(:first-of-type) button {
 }
 section.skillsArea > div ul:first-of-type li button.active,
 section.skillsArea > div ul:first-of-type li button:hover {
-  background-color: var(--color-light-yellow);
+  background-color: var(--color-light-blue);
 }
 section.skillsArea > div ul:first-of-type li button span {
   display: inline-block;
   width: 13px;
   line-height: 13px;
-  background-color: var(--color-pink);
-  border-radius: 50%;
-  font-size: var(--font-micro);
-  margin-left: 2%;
-  padding: 0.5px 0 0 0;
   position: relative;
   top: -20px;
   left: 4px;
   opacity: 0;
   transition: all 0.3s ease-in;
+  color: var(--color-white);
+  font-size: var(--font-micro);
+  background-color: var(--color-purple);
+  border-radius: 50%;
+  margin-left: 2%;
+  padding: 1.3px 0 0 0.3px;
 }
 section.skillsArea > div ul:first-of-type li button.active span,
 section.skillsArea > div ul:first-of-type li button:hover span {
@@ -94,20 +94,22 @@ section.skillsArea > div ul:last-of-type {
   flex-wrap: wrap;
   background-color: var(--color-white);
   border-radius: 4px;
-  padding: 0 5%;
+  padding: 0 2%;
 }
 section.skillsArea > div ul:last-of-type li {
   display: flex;
   flex-direction: column;
   align-items: center;
   width: 12.66%;
-  margin: 17px 2%;
+  margin: 15px 2%;
   text-align: center;
 }
 section.skillsArea > div ul:last-of-type li i {
+  color: var(--color-dark-white);
   font-size: 90px;
   margin-bottom: 10px;
 }
+/*
 section.skillsArea > div ul:last-of-type li:nth-of-type(1) i {
   color: #f2672c;
 }
@@ -132,14 +134,86 @@ section.skillsArea > div ul:last-of-type li:nth-of-type(7) i {
 section.skillsArea > div ul:last-of-type li:nth-of-type(8) i {
   color: #0d2636;
 }
+*/
 section.skillsArea > div ul:last-of-type li span {
+  font-size: var(--font-small);
   margin-bottom: 10px;
 }
 section.skillsArea > div ul:last-of-type li div.progress {
   width: 100%;
   line-height: 3px;
+  color: var(--color-white);
+  font-size: var(--font-micro);
+  font-weight: var(--weight-light);
   background-color: var(--color-light-white);
 }
 section.skillsArea > div ul:last-of-type li div div.progress-bar {
   background-color: var(--color-dark-grey);
+}
+
+/* Projects */
+section.projectsArea > ul {
+  display: flex;
+}
+section.projectsArea > ul li:not(:first-of-type) {
+  margin-left: 2%;
+}
+section.projectsArea > ul li a:first-of-type {
+  display: block;
+  position: relative;
+  margin-bottom: 20px;
+}
+section.projectsArea > ul li a:first-of-type img {
+  display: block;
+  width: 100%;
+  border-radius: 5px;
+}
+section.projectsArea > ul li a:first-of-type div {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+  background-color: black;
+  opacity: 0;
+  text-align: center;
+}
+section.projectsArea > ul li a:first-of-type:hover img,
+section.projectsArea > ul li a:first-of-type:hover div {
+  transform: translateY(-10px);
+  transition: all 0.3s ease-in;
+}
+section.projectsArea > ul li a:first-of-type:hover div {
+  opacity: 0.7;
+}
+section.projectsArea > ul li a:first-of-type div h3 {
+  font-size: var(--font-medium);
+  color: var(--color-white);
+  margin-bottom: 10px;
+}
+section.projectsArea > ul li a:first-of-type div span {
+  color: var(--color-white);
+  font-weight: var(--weight-light);
+}
+section.projectsArea > ul li a:last-of-type {
+  display: block;
+  width: 22%;
+  margin: 0 auto;
+  padding: 7px 0;
+  text-align: center;
+  color: var(--color-white);
+  font-size: var(--font-small);
+  font-weight: var(--weight-light);
+  background-color: var(--color-light-grey);
+  border-radius: 3px;
+}
+section.projectsArea > ul li a:last-of-type i {
+  color: var(--color-white);
+  font-size: var(--font-small);
+  font-weight: var(--weight-light);
+  margin-left: 2px;
 }
