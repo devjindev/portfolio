@@ -79,10 +79,12 @@ header {
   justify-content: space-between;
   align-items: center;
   background-color: transparent;
-  margin-top: 20px;
+  margin: 20px auto 0;
   padding: 10px 3%;
   text-transform: uppercase;
-  /* background-color: white; */
+  background-color: red;
+  width: 100%;
+  max-width: 1320px;
 }
 header > h1 a {
   font-size: 18px;
