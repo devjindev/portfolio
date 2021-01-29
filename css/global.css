@@ -55,8 +55,6 @@ ul {
 
 /* Typotgraphy */
 body > :not(#home, #contact) h2 {
-  font-size: var(--font-medium);
-  font-weight: var(--weight-bold);
   text-transform: uppercase;
   text-align: center;
   text-decoration: underline;
@@ -70,9 +68,6 @@ section.projectsArea {
   padding: 60px 5%;
 }
 
-body {
-  background: url("../images/bg_01.png") no-repeat center/cover;
-}
 /* Nav */
 header {
   position: sticky;
@@ -83,15 +78,15 @@ header {
   align-items: center;
   background-color: transparent;
   margin: 20px auto 0;
-  padding: 10px 3%;
+  padding: 13px 3%;
   text-transform: uppercase;
-  background-color: red;
+  background-color: rgba(0, 0, 0, 0.5);
   width: 100%;
   max-width: 1320px;
+  z-index: 1;
 }
-header > h1 a {
-  font-size: 18px;
-  font-weight: var(--weight-bold);
+header * {
+  color: var(--color-light-white);
 }
 header > nav ul {
   display: flex;
@@ -105,6 +100,8 @@ header > nav ul li a:hover {
 
 /* Home */
 section.homeArea {
+  background: url("../images/bg_01.png") no-repeat center/cover;
+  background-attachment: fixed;
 }
 section.homeArea > div:last-of-type {
   max-width: 1320px;
@@ -114,13 +111,10 @@ section.homeArea > div:last-of-type {
 }
 /* Home ul */
 section.homeArea > div > ul li i {
-  font-size: var(--font-medium);
-  margin-bottom: 60px;
+  margin-bottom: 57px;
 }
 section.homeArea > div > ul li h2 {
   color: var(--color-white);
-  font-size: var(--font-large);
-  font-weight: var(--weight-bold);
   letter-spacing: -1px;
   line-height: 63px;
   margin-bottom: 30px;
@@ -132,15 +126,12 @@ section.homeArea > div > ul li h2 span {
 section.homeArea > div > ul li p {
   width: 50%;
   margin: 0 auto;
-  font-size: var(--font-small);
-  font-weight: var(--weight-light);
   line-height: 16px;
-  margin-bottom: 120px;
+  margin-bottom: 118px;
 }
 /* Home url */
 section.homeArea > div > span {
   display: block;
-  font-size: 20px;
 }
 section.homeArea > div > span a {
   display: inline-block;
@@ -149,13 +140,13 @@ section.homeArea > div > span a:hover {
   transform: scale(1.2);
 }
 section.homeArea > div > span a:last-of-type {
-  font-weight: var(--weight-bold);
   margin-left: 1%;
 }
 
 /* Contact */
 footer {
   background: url("../images/bg_02.png") no-repeat center/cover;
+  background-attachment: fixed;
 }
 footer > div {
   max-width: 1320px;
@@ -167,14 +158,11 @@ footer > div * {
   color: var(--color-light-white);
 }
 footer > div h2 {
-  font-size: var(--font-medium);
-  font-weight: var(--weight-bold);
   text-transform: uppercase;
   margin-bottom: 30px;
 }
 footer > div ul li:nth-of-type(1) a {
   color: var(--color-pink);
-  font-size: var(--font-large);
   margin-bottom: 30px;
 }
 footer > div ul li:nth-of-type(1) a:hover {
@@ -182,7 +170,6 @@ footer > div ul li:nth-of-type(1) a:hover {
 }
 footer > div ul li:nth-of-type(2) a {
   display: inline-block;
-  font-size: var(--font-medium);
   margin-bottom: 60px;
   transition: all 0.1s ease-in;
 }
@@ -194,13 +181,10 @@ footer > div ul li:nth-of-type(2) a:first-of-type:hover i {
 }
 footer > div ul li:nth-of-type(2) a:last-of-type {
   margin-left: 1%;
-  font-weight: 500;
 }
 footer > div ul li:nth-of-type(2) a:last-of-type:hover {
   color: #ff632a;
 }
 footer > div ul li:nth-of-type(3) {
   color: var(--color-dark-white);
-  font-size: var(--font-micro);
-  font-weight: var(--weight-light);
 }

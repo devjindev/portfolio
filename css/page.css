@@ -19,19 +19,14 @@ section.profileArea > figure figcaption {
 }
 section.profileArea > figure figcaption dl dt {
   margin-bottom: 25px;
-  font-weight: var(--weight-reaular);
 }
 section.profileArea > figure figcaption dl dt span:first-of-type {
   color: var(--color-pink);
 }
 section.profileArea > figure figcaption dl dt span:last-of-type {
-  color: var(--color-light-grey);
-  font-size: var(--font-small);
   margin-left: 1%;
 }
 section.profileArea > figure figcaption dl dd {
-  font-size: var(--font-small);
-  font-weight: var(--weight-light);
   line-height: 16px;
 }
 section.profileArea > figure figcaption dl dd p:not(:last-of-type) {
@@ -56,7 +51,6 @@ section.skillsArea > div ul:first-of-type li {
 }
 section.skillsArea > div ul:first-of-type li button {
   border: 1px solid var(--color-dark-white);
-  font-size: var(--font-small);
   padding: 5px 0;
   width: 100%;
   cursor: pointer;
@@ -84,8 +78,6 @@ section.skillsArea > div ul:first-of-type li button span {
   opacity: 0;
   transition: all 0.3s ease-in;
   color: var(--color-white);
-  font-size: var(--font-micro);
-  font-weight: var(--weight-light);
   background-color: var(--color-purple);
   border-radius: 50%;
   margin-left: 2%;
@@ -114,7 +106,6 @@ section.skillsArea > div ul:last-of-type li {
 }
 section.skillsArea > div ul:last-of-type li i {
   color: var(--color-dark-white);
-  font-size: 85px;
   margin-bottom: 10px;
 }
 /*
@@ -144,15 +135,12 @@ section.skillsArea > div ul:last-of-type li:nth-of-type(8) i {
 }
 */
 section.skillsArea > div ul:last-of-type li span {
-  font-size: var(--font-small);
   margin-bottom: 10px;
 }
 section.skillsArea > div ul:last-of-type li div.progress {
   width: 100%;
   line-height: 3px;
   color: var(--color-white);
-  font-size: var(--font-micro);
-  font-weight: var(--weight-light);
   background-color: var(--color-light-white);
 }
 section.skillsArea > div ul:last-of-type li div div.progress-bar {
@@ -204,13 +192,10 @@ section.projectsArea > ul li a:first-of-type div * {
   color: var(--color-white);
 }
 section.projectsArea > ul li a:first-of-type div h3 {
-  font-size: var(--font-medium);
   line-height: 32px;
   margin-bottom: 12px;
 }
 section.projectsArea > ul li a:first-of-type div span {
-  font-weight: var(--weight-light);
-  line-height: 20px;
 }
 
 /* Projects github */
@@ -219,8 +204,6 @@ section.projectsArea > ul li a:last-of-type {
   width: 22%;
   margin: 0 auto;
   padding: 7px 0;
-  font-size: var(--font-small);
-  font-weight: var(--weight-light);
   background-color: transparent;
   transition: all 0.2s ease;
   text-align: center;
