@@ -10,7 +10,8 @@
   --color-black: #000000;
   --color-yellow: #fdf3be;
   --color-pink: #fe918d;
-  --color-blue: #d0eaff;
+  --color-light-blue: #d0eaff;
+  --color-blue: #34a4ff;
   --color-purple: #93abff;
 
   /* Font size */
@@ -92,11 +93,11 @@ header > div > div {
   padding: 10px 0;
   margin-bottom: 70px;
   text-transform: uppercase;
-  background-color: white;
+  /* background-color: white; */
 }
 header > div > div h1 a {
   font-size: 18px;
-  font-weight: 900;
+  font-weight: var(--weight-bold);
 }
 header > div > div nav ul {
   display: flex;
@@ -131,13 +132,13 @@ header > div > ul li p {
   font-size: var(--font-small);
   font-weight: var(--weight-light);
   line-height: 16px;
-  margin-bottom: 118px;
+  margin-bottom: 120px;
 }
 
-/* Home sns */
+/* Home url */
 header > div > span {
   display: block;
-  font-size: 22px;
+  font-size: 20px;
 }
 header > div > span a {
   display: inline-block;
