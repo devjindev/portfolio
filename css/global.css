@@ -154,13 +154,14 @@ section.homeArea > div > span {
 }
 section.homeArea > div > span a {
   display: inline-block;
+  transition: all 0.1s ease-in;
 }
 section.homeArea > div > span a,
 section.homeArea > div > span a i {
   font-size: 20px;
 }
 section.homeArea > div > span a:hover {
-  transform: scale(1.2);
+  transform: scale(1.1);
 }
 section.homeArea > div > span a:last-of-type {
   font-weight: var(--weight-bold);
