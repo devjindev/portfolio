@@ -37,6 +37,10 @@
   font-family: "Roboto";
   color: var(--color-dark-grey);
 }
+*::selection {
+  background-color: var(--color-yellow);
+  color: var(--color-grey);
+}
 body {
   margin: 0;
   padding: 0;
@@ -141,6 +145,9 @@ header > div > span {
 }
 header > div > span a {
   display: inline-block;
+}
+header > div > span a:hover {
+  transform: scale(1.2);
 }
 header > div > span a:last-of-type {
   font-weight: 900;
