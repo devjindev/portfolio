@@ -194,7 +194,7 @@ footer > div ul li:nth-of-type(2) a:last-of-type {
   font-weight: 500;
 }
 footer > div ul li:nth-of-type(2) a:last-of-type:hover {
-  color: #f25d27;
+  color: #ff632a;
 }
 footer > div ul li:nth-of-type(3) {
   color: var(--color-dark-white);
