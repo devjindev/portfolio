@@ -131,13 +131,13 @@ header > div > ul li p {
   font-size: var(--font-small);
   font-weight: var(--weight-light);
   line-height: 16px;
-  margin-bottom: 122px;
+  margin-bottom: 118px;
 }
 
 /* Home sns */
 header > div > span {
   display: block;
-  font-size: 18px;
+  font-size: 22px;
 }
 header > div > span a {
   display: inline-block;
@@ -146,7 +146,7 @@ header > div > span a:hover {
   transform: scale(1.2);
 }
 header > div > span a:last-of-type {
-  font-weight: 900;
+  font-weight: var(--weight-bold);
   margin-left: 1%;
 }
 
@@ -187,13 +187,14 @@ footer > div ul li:nth-of-type(2) a:first-of-type i {
   transition: all 0.1s ease-in;
 }
 footer > div ul li:nth-of-type(2) a:first-of-type:hover i {
-  color: #00cc66;
+  color: #1bbfaf;
 }
 footer > div ul li:nth-of-type(2) a:last-of-type {
   margin-left: 1%;
+  font-weight: 500;
 }
 footer > div ul li:nth-of-type(2) a:last-of-type:hover {
-  color: #ff771d;
+  color: #f25d27;
 }
 footer > div ul li:nth-of-type(3) {
   color: var(--color-dark-white);
