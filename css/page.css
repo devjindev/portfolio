@@ -6,22 +6,23 @@ section.profileArea > figure {
   padding: 0 10%;
 }
 section.profileArea > figure img {
-  width: 40%;
-  height: 40%;
+  width: 45%;
+  height: 45%;
   min-width: 300px;
   border-radius: 10px;
 }
 section.profileArea > figure figcaption {
-  width: 55%;
+  width: 50%;
   margin-left: 5%;
   padding: 25px 0;
+  justify-items: center;
 }
 section.profileArea > figure figcaption dl dt {
   margin-bottom: 25px;
   font-weight: var(--weight-reaular);
 }
 section.profileArea > figure figcaption dl dt span:first-of-type {
-  color: var(--color-blue);
+  color: var(--color-pink);
 }
 section.profileArea > figure figcaption dl dt span:last-of-type {
   color: var(--color-light-grey);
@@ -41,20 +42,23 @@ section.profileArea > figure figcaption dl dd p:not(:last-of-type) {
 section.skillsArea {
   background-color: var(--color-light-white);
 }
-section.skillsArea > div ul:first-of-type {
-  padding: 0 10%;
-  margin-bottom: 20px;
-}
+
 /* Skills button */
 section.skillsArea > div ul:first-of-type {
   display: flex;
   justify-content: center;
+  padding: 0 15%;
+  margin-bottom: 20px;
+}
+section.skillsArea > div ul:first-of-type li {
+  width: 20%;
+  min-width: 80px;
 }
 section.skillsArea > div ul:first-of-type li button {
   border: 1px solid var(--color-dark-white);
   font-size: var(--font-small);
-  width: 150px;
   padding: 5px 0;
+  width: 100%;
   cursor: pointer;
 }
 section.skillsArea > div ul:first-of-type li:first-of-type button {
@@ -76,21 +80,23 @@ section.skillsArea > div ul:first-of-type li button span {
   line-height: 13px;
   position: relative;
   top: -20px;
-  left: 4px;
+  left: 0;
   opacity: 0;
   transition: all 0.3s ease-in;
   color: var(--color-white);
   font-size: var(--font-micro);
+  font-weight: var(--weight-light);
   background-color: var(--color-purple);
   border-radius: 50%;
   margin-left: 2%;
-  padding: 1.3px 0 0 0.3px;
+  padding: 0.7px 0.2px 0 0;
 }
 section.skillsArea > div ul:first-of-type li button.active span,
 section.skillsArea > div ul:first-of-type li button:hover span {
   opacity: 1;
   top: -1.4px;
 }
+
 /* Skills list */
 section.skillsArea > div ul:last-of-type {
   display: flex;
@@ -102,14 +108,13 @@ section.skillsArea > div ul:last-of-type {
 section.skillsArea > div ul:last-of-type li {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  width: 12.66%;
-  margin: 15px 2%;
+  width: 13.66%;
+  margin: 18px 1.5%;
   text-align: center;
 }
 section.skillsArea > div ul:last-of-type li i {
   color: var(--color-dark-white);
-  font-size: 90px;
+  font-size: 85px;
   margin-bottom: 10px;
 }
 /*
