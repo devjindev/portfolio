@@ -70,19 +70,8 @@ section.projectsArea {
   padding: 60px 5%;
 }
 
-/* Home */
+/* Nav */
 header {
-  background: url("../images/bg_01.png") no-repeat center/cover;
-}
-header > div {
-  max-width: 1320px;
-  margin: 0 auto;
-  padding: 20px 3% 30px;
-  text-align: center;
-}
-
-/* Home nav */
-header > div > div {
   position: sticky;
   left: 0;
   top: 0;
@@ -90,31 +79,41 @@ header > div > div {
   justify-content: space-between;
   align-items: center;
   background-color: transparent;
-  padding: 10px 0;
-  margin-bottom: 70px;
+  margin-top: 20px;
+  padding: 10px 3%;
   text-transform: uppercase;
   /* background-color: white; */
 }
-header > div > div h1 a {
+header > h1 a {
   font-size: 18px;
   font-weight: var(--weight-bold);
 }
-header > div > div nav ul {
+header > nav ul {
   display: flex;
 }
-header > div > div nav ul li {
+header > nav ul li {
   margin-left: 30px;
 }
-header > div > div nav ul li a:hover {
+header > nav ul li a:hover {
   color: var(--color-white);
 }
 
+/* Home */
+section.homeArea {
+  background: url("../images/bg_01.png") no-repeat center/cover;
+}
+section.homeArea > div:last-of-type {
+  max-width: 1320px;
+  margin: 0 auto;
+  padding: 70px 3% 30px;
+  text-align: center;
+}
 /* Home ul */
-header > div > ul li i {
+section.homeArea > div > ul li i {
   font-size: var(--font-medium);
   margin-bottom: 60px;
 }
-header > div > ul li h2 {
+section.homeArea > div > ul li h2 {
   color: var(--color-white);
   font-size: var(--font-large);
   font-weight: var(--weight-bold);
@@ -122,11 +121,11 @@ header > div > ul li h2 {
   line-height: 63px;
   margin-bottom: 30px;
 }
-header > div > ul li h2 span {
+section.homeArea > div > ul li h2 span {
   color: var(--color-white);
   background-color: var(--color-pink);
 }
-header > div > ul li p {
+section.homeArea > div > ul li p {
   width: 50%;
   margin: 0 auto;
   font-size: var(--font-small);
@@ -134,19 +133,18 @@ header > div > ul li p {
   line-height: 16px;
   margin-bottom: 120px;
 }
-
 /* Home url */
-header > div > span {
+section.homeArea > div > span {
   display: block;
   font-size: 20px;
 }
-header > div > span a {
+section.homeArea > div > span a {
   display: inline-block;
 }
-header > div > span a:hover {
+section.homeArea > div > span a:hover {
   transform: scale(1.2);
 }
-header > div > span a:last-of-type {
+section.homeArea > div > span a:last-of-type {
   font-weight: var(--weight-bold);
   margin-left: 1%;
 }
