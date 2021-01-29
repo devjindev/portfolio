@@ -166,9 +166,9 @@ section.projectsArea > ul {
 section.projectsArea > ul li:not(:first-of-type) {
   margin-left: 2%;
 }
+
 /* Projects content */
 section.projectsArea > ul li a:first-of-type {
-  display: block;
   position: relative;
   margin-bottom: 20px;
 }
@@ -186,52 +186,55 @@ section.projectsArea > ul li a:first-of-type div {
   justify-content: center;
   width: 100%;
   height: 100%;
+  padding: 0 1%;
   border-radius: 5px;
   background-color: black;
   opacity: 0;
   text-align: center;
+}
+section.projectsArea > ul li a:first-of-type:hover div {
+  opacity: 0.7;
 }
 section.projectsArea > ul li a:first-of-type:hover img,
 section.projectsArea > ul li a:first-of-type:hover div {
   transform: translateY(-10px);
   transition: all 0.3s ease-in;
 }
-section.projectsArea > ul li a:first-of-type:hover div {
-  opacity: 0.7;
-}
 section.projectsArea > ul li a:first-of-type div * {
   color: var(--color-white);
 }
 section.projectsArea > ul li a:first-of-type div h3 {
   font-size: var(--font-medium);
-  margin-bottom: 10px;
+  line-height: 32px;
+  margin-bottom: 12px;
 }
 section.projectsArea > ul li a:first-of-type div span {
   font-weight: var(--weight-light);
+  line-height: 20px;
 }
+
 /* Projects github */
-section.projectsArea > ul li a:last-of-type,
-section.projectsArea > ul li a:last-of-type i {
-  color: var(--color-dark-grey);
-  font-size: var(--font-small);
-  font-weight: var(--weight-light);
-  background-color: transparent;
-  transition: all 0.2s ease-in;
-}
 section.projectsArea > ul li a:last-of-type {
   display: block;
   width: 22%;
   margin: 0 auto;
   padding: 7px 0;
+  font-size: var(--font-small);
+  font-weight: var(--weight-light);
+  background-color: transparent;
+  transition: all 0.2s ease;
   text-align: center;
   border: 1px solid var(--color-dark-grey);
   border-radius: 3px;
 }
 section.projectsArea > ul li a:last-of-type i {
-  margin-left: 2px;
+  transition: all 0.2s ease;
+  margin-left: 1%;
 }
 section.projectsArea > ul li a:last-of-type:hover,
 section.projectsArea > ul li a:last-of-type:hover i {
   color: var(--color-white);
+}
+section.projectsArea > ul li a:last-of-type:hover {
   background-color: var(--color-dark-grey);
 }
