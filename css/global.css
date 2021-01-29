@@ -157,33 +157,34 @@ footer {
 footer > div {
   max-width: 1320px;
   margin: 0 auto;
-  padding: 70px 6% 20px;
+  padding: 70px 5% 20px;
+  text-align: center;
 }
 footer > div * {
   color: var(--color-light-white);
-  text-align: center;
 }
 footer > div h2 {
-  text-transform: uppercase;
   font-size: var(--font-medium);
-  margin-bottom: 30px;
-}
-footer > div ul li:nth-of-type(1) {
-  font-size: var(--font-large);
+  font-weight: var(--weight-bold);
+  text-transform: uppercase;
   margin-bottom: 30px;
 }
 footer > div ul li:nth-of-type(1) a {
   color: var(--color-pink);
+  font-size: var(--font-large);
+  margin-bottom: 30px;
 }
 footer > div ul li:nth-of-type(1) a:hover {
   transform: scale(1.1);
 }
-footer > div ul li:nth-of-type(2) {
-  font-size: var(--font-medium);
-  margin-bottom: 60px;
-}
 footer > div ul li:nth-of-type(2) a {
   display: inline-block;
+  font-size: var(--font-medium);
+  margin-bottom: 60px;
+  transition: all 0.1s ease-in;
+}
+footer > div ul li:nth-of-type(2) a:first-of-type i {
+  transition: all 0.1s ease-in;
 }
 footer > div ul li:nth-of-type(2) a:first-of-type:hover i {
   color: #00cc66;
