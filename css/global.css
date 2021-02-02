@@ -28,6 +28,9 @@
 }
 
 /* Uriversal tags */
+html {
+  scroll-behavior: smooth;
+}
 body {
   margin: 0;
   padding: 0;
@@ -66,6 +69,13 @@ body > :not(#home, #contact) h2 {
   text-decoration: underline;
   margin-bottom: 40px;
 }
+body > * {
+  overflow: auto;
+}
+body > header,
+body > section {
+  height: 100%;
+}
 section.profileArea,
 section.skillsArea > div,
 section.projectsArea {
@@ -75,93 +85,99 @@ section.projectsArea {
 }
 
 /* Nav */
-header {
-  position: sticky;
+nav {
+  position: fixed;
   left: 0;
   top: 0;
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-between;
-  align-items: center;
-  background-color: transparent;
-  margin: 20px auto 0;
-  padding: 13px 3%;
-  text-transform: uppercase;
-  background-color: rgba(0, 0, 0, 0.5);
   width: 100%;
+  padding: 13px 5%;
+  margin-top: 15px;
+  align-items: center;
+  text-transform: uppercase;
+  background-color: transparent;
   z-index: 1;
+  transition: all 0.3s ease-in-out;
 }
-header * {
+nav.scrolled {
+  margin: 0;
+  background-color: rgba(0, 0, 0, 0.4) !important;
+  transition: all 0.3s;
+}
+nav * {
   color: var(--color-white);
 }
-header > h1 a {
+nav > h1 a {
   font-size: 18px;
   font-weight: var(--weight-bold);
 }
-header > nav ul {
+nav > ul {
   display: flex;
   flex-flow: row nowrap;
 }
-header > nav ul li {
-  margin-left: 30px;
+nav > ul li {
+  margin-left: 20px;
 }
 /* Nav a animation */
-header > nav ul li a {
-  font-weight: var(--weight-light);
+nav > ul li a {
+  font-weight: var(--weight-reaular);
   padding: 3px 8px;
   position: relative;
 }
-header > nav ul li a:before,
-header > nav ul li a:after {
+nav > ul li a:before,
+nav > ul li a:after {
   position: absolute;
   left: 0px;
   width: 100%;
   height: 2px;
-  background: var(--color-white);
+  background: rgba(255, 255, 255, 0.5);
   content: "";
   opacity: 0;
   transition: all 0.3s;
 }
-header > nav ul li a:before {
+nav > ul li a:before {
   top: 0px;
   transform: translateY(10px);
 }
-header > nav ul li a:after {
+nav > ul li a:after {
   bottom: 0px;
   transform: translateY(-10px);
 }
-header > nav ul li a.active:before,
-header > nav ul li a.active:after,
-header > nav ul li a:hover:before,
-header > nav ul li a:hover:after {
+nav > ul li a.active:before,
+nav > ul li a.active:after,
+nav > ul li a:hover:before,
+nav > ul li a:hover:after {
   opacity: 1;
   transform: translateY(0px);
 }
 
 /* Home */
-section.homeArea {
+header {
   background: url("../images/bg_01.png") no-repeat center/cover;
   background-attachment: fixed;
 }
-section.homeArea > div:last-of-type {
+header > div {
   max-width: 1320px;
   margin: 0 auto;
-  padding: 75px 0 30px;
+  padding: 130px 0 30px;
   text-align: center;
 }
 /* Home ul */
-section.homeArea > div > ul li i {
+header > div > ul li i {
+  color: var(--color-black);
   font-size: var(--font-medium);
-  margin-bottom: 56px;
+  margin-bottom: 50px;
 }
-section.homeArea > div > ul li h2 {
+header > div > ul li h2 {
   color: var(--color-white);
   font-size: 52px;
   line-height: 63px;
   letter-spacing: -1px;
   margin-bottom: 30px;
 }
-section.homeArea > div > ul li h2 span {
+header > div > ul li h2 span {
   color: var(--color-white);
   font-size: 52px;
   font-weight: var(--weight-bold);
@@ -169,33 +185,34 @@ section.homeArea > div > ul li h2 span {
   letter-spacing: -1px;
   background-color: var(--color-light-pink);
 }
-section.homeArea > div > ul li p {
+header > div > ul li p {
   width: 290px;
   margin: 0 auto;
-  color: var(--color-white);
+  color: var(--color-black);
   font-size: var(--font-micro);
   font-weight: var(--weight-light);
   line-height: 18px;
-  margin-bottom: 118px;
+  margin-bottom: 145px;
   background-color: rgba(255, 255, 255, 0.2);
   font-family: "Roboto Mono";
 }
 /* Home url */
-section.homeArea > div > span {
+header > div > span {
   display: block;
 }
-section.homeArea > div > span a {
+header > div > span a {
   display: inline-block;
   transition: all 0.1s ease-in;
 }
-section.homeArea > div > span a,
-section.homeArea > div > span a i {
+header > div > span a,
+header > div > span a i {
+  color: var(--color-black);
   font-size: 20px;
 }
-section.homeArea > div > span a:hover {
+header > div > span a:hover {
   transform: scale(1.1);
 }
-section.homeArea > div > span a:last-of-type {
+header > div > span a:last-of-type {
   font-weight: var(--weight-bold);
   margin-left: 1%;
 }
@@ -255,14 +272,14 @@ footer > div ul li:nth-of-type(3) {
 /* mobile */
 @media screen and (max-width: 767px) {
   /* Home */
-  section.homeArea > div > ul li h2 {
+  header > div > ul li h2 {
     font-size: 40px;
     line-height: 55px;
   }
-  section.homeArea > div > ul li h2 span {
+  header > div > ul li h2 span {
     font-size: 40px;
   }
-  section.homeArea > div > ul li p {
+  header > div > ul li p {
     width: 240px;
   }
 
