@@ -7,7 +7,7 @@
   --color-light-grey: #7c7979;
   --color-grey: #616161;
   --color-dark-grey: #4d4d4d;
-  --color-black: #000000;
+  --color-black: #212529;
   --color-yellow: #fdf3be;
   --color-pink: #fe918d;
   --color-dark-pink: #ff7f7b;
@@ -36,17 +36,14 @@ body {
 body * {
   box-sizing: border-box;
   font-family: "Roboto";
-  color: var(--color-dark-grey);
-  font-size: var(--font-regular);
-  font-weight: var(--weight-reaular);
 }
 body *::selection {
   background-color: var(--color-yellow);
-  color: var(--color-dark-grey);
+  color: var(--color-black);
 }
 a {
   display: block;
-  color: var(--color-dark-grey);
+  color: var(--color-black);
   text-decoration: none;
 }
 a:hover {
@@ -79,6 +76,7 @@ header {
   left: 0;
   top: 0;
   display: flex;
+  flex-flow: row nowrap;
   justify-content: space-between;
   align-items: center;
   background-color: transparent;
@@ -99,6 +97,7 @@ header > h1 a {
 }
 header > nav ul {
   display: flex;
+  flex-flow: row nowrap;
 }
 header > nav ul li {
   margin-left: 30px;
@@ -107,7 +106,7 @@ header > nav ul li a {
   font-weight: var(--weight-light);
 }
 header > nav ul li a:hover {
-  color: var(--color-light-blue);
+  color: var(--color-dark-white);
 }
 
 /* Home */
@@ -142,6 +141,7 @@ section.homeArea > div > ul li h2 span {
 }
 section.homeArea > div > ul li p {
   width: 50%;
+  min-width: 200px;
   margin: 0 auto;
   font-size: var(--font-small);
   font-weight: var(--weight-light);
@@ -218,4 +218,15 @@ footer > div ul li:nth-of-type(3) {
   color: var(--color-dark-white);
   font-size: var(--font-micro);
   font-weight: var(--weight-light);
+}
+
+/* mobile */
+@media screen and (max-width: 767px) {
+  section.homeArea > div > ul li h2 {
+    font-size: 40px;
+    line-height: 55px;
+  }
+  section.homeArea > div > ul li h2 span {
+    font-size: 40px;
+  }
 }
