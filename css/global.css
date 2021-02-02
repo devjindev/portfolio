@@ -99,12 +99,11 @@ nav {
   text-transform: uppercase;
   background-color: transparent;
   z-index: 1;
-  transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in;
 }
 nav.scrolled {
   margin: 0;
   background-color: rgba(0, 0, 0, 0.4) !important;
-  transition: all 0.3s;
 }
 nav * {
   color: var(--color-white);
@@ -152,6 +151,15 @@ nav > ul li a:hover:after {
   opacity: 1;
   transform: translateY(0px);
 }
+/* Nav button */
+nav > span {
+  position: absolute;
+  right: 5%;
+  top: 13.5px;
+  font-size: 20px;
+  cursor: pointer;
+  display: none;
+}
 
 /* Home */
 header {
@@ -183,7 +191,6 @@ header > div > ul li h2 span {
   font-weight: var(--weight-bold);
   line-height: 63px;
   letter-spacing: -1px;
-  background-color: var(--color-light-pink);
 }
 header > div > ul li p {
   width: 290px;
@@ -271,6 +278,26 @@ footer > div ul li:nth-of-type(3) {
 
 /* mobile */
 @media screen and (max-width: 767px) {
+  /* Nav hambuger*/
+  nav {
+    flex-flow: column nowrap;
+    align-items: flex-start;
+  }
+  nav > ul {
+    flex-flow: column nowrap;
+    width: 100%;
+    text-align: center;
+    display: block;
+    background-color: rgba(0, 0, 0, 0.4);
+  }
+  nav > ul li {
+    margin-left: 0;
+    padding-top: 10px;
+  }
+  nav > span {
+    display: block;
+  }
+
   /* Home */
   header > div > ul li h2 {
     font-size: 40px;
