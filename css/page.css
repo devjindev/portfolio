@@ -160,7 +160,7 @@ section.projectsArea > ul {
   justify-content: center;
 }
 section.projectsArea > ul li {
-  max-width: 354px;
+  max-width: 356px;
   margin: 0 1%;
 }
 section.projectsArea > ul li:not(:last-of-type) {
@@ -243,8 +243,9 @@ section.projectsArea > ul li a:last-of-type:hover {
 
 /* tablet */
 @media screen and (min-width: 768px) and (max-width: 1279px) {
+  /* Projects */
   section.projectsArea > ul li {
-    max-width: 211px;
+    max-width: 31.33%;
   }
 }
 
