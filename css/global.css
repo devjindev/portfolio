@@ -151,7 +151,7 @@ nav > ul li a:hover:after {
   opacity: 1;
   transform: translateY(0px);
 }
-/* Nav button */
+/* Nav hambuger */
 nav > span {
   position: absolute;
   right: 5%;
@@ -160,7 +160,6 @@ nav > span {
   cursor: pointer;
   display: none;
 }
-
 /* Home */
 header {
   background: url("../images/bg_01.png") no-repeat center/cover;
@@ -283,16 +282,21 @@ footer > div ul li:nth-of-type(3) {
     flex-flow: column nowrap;
     align-items: flex-start;
   }
+  nav.scrolled ul {
+    background-color: transparent;
+  }
   nav > ul {
     flex-flow: column nowrap;
     width: 100%;
+    padding: 5px 0;
+    margin-top: 10px;
     text-align: center;
-    display: block;
     background-color: rgba(0, 0, 0, 0.4);
+    display: block;
   }
   nav > ul li {
     margin-left: 0;
-    padding-top: 10px;
+    padding: 5px 0;
   }
   nav > span {
     display: block;
