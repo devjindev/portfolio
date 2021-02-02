@@ -244,7 +244,7 @@ section.projectsArea > ul li a:last-of-type:hover {
 /* tablet */
 @media screen and (min-width: 768px) and (max-width: 1279px) {
   section.projectsArea > ul li {
-    max-width: 216px;
+    max-width: 211px;
   }
 }
 

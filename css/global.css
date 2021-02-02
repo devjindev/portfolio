@@ -89,7 +89,6 @@ header {
   text-transform: uppercase;
   background-color: rgba(0, 0, 0, 0.5);
   width: 100%;
-  max-width: 1320px;
   z-index: 1;
 }
 header * {
@@ -109,6 +108,7 @@ header > nav ul li {
 header > nav ul li a {
   font-weight: var(--weight-light);
 }
+header > nav ul li a.active,
 header > nav ul li a:hover {
   color: var(--color-dark-white);
 }
