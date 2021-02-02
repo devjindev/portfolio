@@ -10,7 +10,6 @@
   --color-black: #212529;
   --color-yellow: #fdf3be;
   --color-pink: #fe918d;
-  --color-dark-pink: #ff7f7b;
   --color-light-blue: #d0eaff;
   --color-blue: #60b8ff;
   --color-purple: #93abff;
@@ -54,6 +53,11 @@ ul {
 }
 
 /* Typotgraphy */
+section.homeArea > div > ul li h2,
+section.homeArea > div > ul li h2 span,
+section.profileArea > figure figcaption dl dt span:first-of-type {
+  font-family: "Nanum Gothic";
+}
 body > :not(#home, #contact) h2 {
   font-size: var(--font-medium);
   font-weight: var(--weight-bold);
@@ -117,7 +121,7 @@ section.homeArea {
 section.homeArea > div:last-of-type {
   max-width: 1320px;
   margin: 0 auto;
-  padding: 75px 3% 30px;
+  padding: 75px 0 30px;
   text-align: center;
 }
 /* Home ul */
@@ -127,26 +131,29 @@ section.homeArea > div > ul li i {
 }
 section.homeArea > div > ul li h2 {
   color: var(--color-white);
-  font-size: var(--font-large);
-  font-weight: var(--weight-bold);
-  line-height: 58px;
+  font-size: 52px;
+  line-height: 63px;
   letter-spacing: -1px;
   margin-bottom: 30px;
 }
 section.homeArea > div > ul li h2 span {
   color: var(--color-white);
-  font-size: var(--font-large);
+  font-size: 52px;
   font-weight: var(--weight-bold);
-  background-color: var(--color-pink);
+  line-height: 63px;
+  letter-spacing: -1px;
+  background-color: var(--color-light-pink);
 }
 section.homeArea > div > ul li p {
-  width: 50%;
-  min-width: 200px;
+  width: 290px;
   margin: 0 auto;
-  font-size: var(--font-small);
+  color: var(--color-white);
+  font-size: var(--font-micro);
   font-weight: var(--weight-light);
   line-height: 18px;
   margin-bottom: 118px;
+  background-color: rgba(255, 255, 255, 0.2);
+  font-family: "Roboto Mono";
 }
 /* Home url */
 section.homeArea > div > span {
@@ -176,7 +183,7 @@ footer {
 footer > div {
   max-width: 1320px;
   margin: 0 auto;
-  padding: 70px 5% 20px;
+  padding: 70px 0 20px;
   text-align: center;
 }
 footer > div * {
@@ -222,11 +229,25 @@ footer > div ul li:nth-of-type(3) {
 
 /* mobile */
 @media screen and (max-width: 767px) {
+  /* Home */
   section.homeArea > div > ul li h2 {
     font-size: 40px;
     line-height: 55px;
   }
   section.homeArea > div > ul li h2 span {
     font-size: 40px;
+  }
+  section.homeArea > div > ul li p {
+    width: 240px;
+  }
+
+  /* Contact */
+  footer > div h2,
+  footer > div ul li:nth-of-type(2) a,
+  footer > div ul li:nth-of-type(2) a:first-of-type i {
+    font-size: var(--font-regular);
+  }
+  footer > div ul li:nth-of-type(1) a {
+    font-size: 20px;
   }
 }

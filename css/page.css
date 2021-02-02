@@ -18,11 +18,10 @@ section.profileArea > figure figcaption dl dt {
   margin-bottom: 25px;
 }
 section.profileArea > figure figcaption dl dt span:first-of-type {
-  color: var(--color-black);
+  font-size: 20px;
+  font-weight: var(--weight-reaular);
 }
 section.profileArea > figure figcaption dl dt span:last-of-type {
-  color: var(--color-black);
-  font-size: var(--font-small);
   font-weight: var(--weight-light);
   margin-left: 1%;
 }
@@ -242,6 +241,13 @@ section.projectsArea > ul li a:last-of-type:hover {
   background-color: var(--color-dark-grey);
 }
 
+/* tablet */
+@media screen and (min-width: 768px) and (max-width: 1279px) {
+  section.projectsArea > ul li {
+    max-width: 216px;
+  }
+}
+
 /* mobile */
 @media screen and (max-width: 767px) {
   /* profile */
@@ -260,7 +266,7 @@ section.projectsArea > ul li a:last-of-type:hover {
     padding: 0 3%;
   }
 
-  /* SZkills button */
+  /* Skills button */
   section.skillsArea > div ul:first-of-type {
     padding: 0;
   }
