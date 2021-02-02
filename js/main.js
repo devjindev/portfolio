@@ -5,3 +5,8 @@ $(function () {
         $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
     });
 });
+
+// Nav hambuger
+$('nav div').click(function() {
+    $(this).toggleClass('is-opened');
+})

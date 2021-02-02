@@ -93,17 +93,16 @@ nav {
   flex-flow: row nowrap;
   justify-content: space-between;
   width: 100%;
-  padding: 13px 5%;
-  margin-top: 15px;
+  padding: 28px 5% 13px;
   align-items: center;
   text-transform: uppercase;
   background-color: transparent;
   z-index: 1;
-  transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in-out;
 }
 nav.scrolled {
-  margin: 0;
-  background-color: rgba(0, 0, 0, 0.4) !important;
+  padding-top: 15px;
+  background-color: rgba(0, 0, 0, 0.5);
 }
 nav * {
   color: var(--color-white);
@@ -122,7 +121,7 @@ nav > ul li {
 /* Nav a animation */
 nav > ul li a {
   font-weight: var(--weight-reaular);
-  padding: 3px 8px;
+  padding: 3px 10px;
   position: relative;
 }
 nav > ul li a:before,
@@ -152,14 +151,34 @@ nav > ul li a:hover:after {
   transform: translateY(0px);
 }
 /* Nav hambuger */
-nav > span {
+nav > div {
   position: absolute;
   right: 5%;
-  top: 13.5px;
+  top: 16px;
+  width: 22px;
   font-size: 20px;
   cursor: pointer;
   display: none;
 }
+nav > div span {
+  display: block;
+  border-top: 3px solid white;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+}
+nav > div span:not(:last-of-type) {
+  margin-bottom: 3px;
+}
+nav div.is-opened span:first-child {
+  transform: translateY(6px) rotate(45deg);
+}
+nav div.is-opened span:nth-child(2) {
+  transform: scaleX(0);
+}
+nav div.is-opened span:last-child {
+  transform: translateY(-6px) rotate(-45deg);
+}
+
 /* Home */
 header {
   background: url("../images/bg_01.png") no-repeat center/cover;
@@ -291,14 +310,17 @@ footer > div ul li:nth-of-type(3) {
     padding: 5px 0;
     margin-top: 10px;
     text-align: center;
-    background-color: rgba(0, 0, 0, 0.4);
+    background-color: rgba(0, 0, 0, 0.5);
     display: block;
   }
   nav > ul li {
     margin-left: 0;
     padding: 5px 0;
   }
-  nav > span {
+  nav > ul li a {
+    display: inline-block;
+  }
+  nav > div {
     display: block;
   }
 
