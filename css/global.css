@@ -115,6 +115,9 @@ nav > ul {
   display: flex;
   flex-flow: row nowrap;
 }
+nav > ul.opend {
+  display: block;
+}
 nav > ul li {
   margin-left: 20px;
 }
@@ -154,11 +157,14 @@ nav > ul li a:hover:after {
 nav > div {
   position: absolute;
   right: 5%;
-  top: 16px;
+  top: 21px;
   width: 22px;
   font-size: 20px;
   cursor: pointer;
   display: none;
+}
+nav.scrolled > div {
+  top: 17px;
 }
 nav > div span {
   display: block;
@@ -269,9 +275,9 @@ footer > div ul li:nth-of-type(1) a {
   margin-bottom: 30px;
   transition: all 0.1s ease-in-out;
 }
-footer > div ul li:nth-of-type(1) a:hover {
+/* footer > div ul li:nth-of-type(1) a:hover {
   transform: scale(1.1);
-}
+} */
 footer > div ul li:nth-of-type(2) a {
   display: inline-block;
   margin-bottom: 60px;
@@ -326,6 +332,11 @@ body > a:hover {
   nav {
     flex-flow: column nowrap;
     align-items: flex-start;
+    background-color: rgba(0, 0, 0, 0.9);
+    padding: 18px 5%;
+  }
+  nav.scrolled {
+    padding: 15px 5%;
   }
   nav.scrolled ul {
     background-color: transparent;
@@ -336,18 +347,15 @@ body > a:hover {
     padding: 5px 0;
     margin-top: 10px;
     text-align: center;
-    background-color: rgba(0, 0, 0, 0.5);
-    display: block;
+    display: none;
   }
   nav > ul li {
     margin-left: 0;
     padding: 5px 0;
   }
-  nav > ul li a {
-    display: inline-block;
-  }
   nav > div {
     display: block;
+    transition: all 0.3s ease-in-out;
   }
 
   /* Home */

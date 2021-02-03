@@ -14,25 +14,18 @@ document.addEventListener('scroll', () => { // document scroll 하면
     }
 });
 
-// Navbar Click Navbar Menu
-// const navbarMenu = document.querySelector('nav > ul li a');
-// navbarMenu.addEventListener('click', (e) => {
-//     const target = e.target;
-//     const link = target.dataset.link;
-//     if(link == null){
-//         return;
-//     }
-//     console.log(e.target.dataset.link);
-
-//     const scrollTo = document.querySelector(link);
-//     scrollTo.scrollIntoView({behavior: 'smooth'});
-// });
-
 // Navbar Hambuger Click - 'clicked' Class Toggle to Hambuger
 const hambuger = document.querySelector('nav > div'); // hambuger
+const navbarMenu = document.querySelector('nav > ul'); // navbarMenu
 
 hambuger.addEventListener('click', () => { // hambuger click 하면
     hambuger.classList.toggle('clicked'); // hambuger 'clicked' Class 추가-삭제
+    navbarMenu.classList.toggle('opend'); // navbarMenu 'opend' Class 추가-삭제
+});
+
+// Navbar Click Navbar Menu
+navbarMenu.addEventListener('click', (e) => {
+    navbarMenu.classList.remove('opend');
 });
 
 // ⭐ Home

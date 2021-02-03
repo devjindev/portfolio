@@ -212,6 +212,7 @@ section.projectsArea > ul li a:first-of-type div * {
   color: var(--color-white);
 }
 section.projectsArea > ul li a:first-of-type div h3 {
+  color: var(--color-yellow);
   font-size: 26px;
   line-height: 32px;
   margin-bottom: 12px;
