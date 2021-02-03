@@ -169,13 +169,13 @@ nav > div span {
 nav > div span:not(:last-of-type) {
   margin-bottom: 3px;
 }
-nav div.is-opened span:first-child {
+nav div.clicked span:first-child {
   transform: translateY(6px) rotate(45deg);
 }
-nav div.is-opened span:nth-child(2) {
+nav div.clicked span:nth-child(2) {
   transform: scaleX(0);
 }
-nav div.is-opened span:last-child {
+nav div.clicked span:last-child {
   transform: translateY(-6px) rotate(-45deg);
 }
 
@@ -192,13 +192,14 @@ header > div {
 }
 /* Home ul */
 header > div > ul li i {
-  color: var(--color-black);
+  color: rgba(0, 0, 0, 0.7);
   font-size: var(--font-medium);
   margin-bottom: 50px;
 }
 header > div > ul li h2 {
   color: var(--color-white);
   font-size: 52px;
+  font-weight: var(--weight-bold);
   line-height: 63px;
   letter-spacing: -1px;
   margin-bottom: 30px;
@@ -209,17 +210,18 @@ header > div > ul li h2 span {
   font-weight: var(--weight-bold);
   line-height: 63px;
   letter-spacing: -1px;
+  background-color: rgba(0, 0, 0, 0.6);
 }
 header > div > ul li p {
-  width: 290px;
+  width: 230px;
   margin: 0 auto;
-  color: var(--color-black);
+  color: rgba(0, 0, 0, 0.7);
   font-size: var(--font-micro);
-  font-weight: var(--weight-light);
   line-height: 18px;
   margin-bottom: 145px;
   background-color: rgba(255, 255, 255, 0.2);
   font-family: "Roboto Mono";
+  letter-spacing: -1px;
 }
 /* Home url */
 header > div > span {
@@ -231,17 +233,14 @@ header > div > span a {
 }
 header > div > span a,
 header > div > span a i {
-  color: var(--color-black);
+  color: rgba(0, 0, 0, 0.7);
   font-size: 20px;
 }
 header > div > span a:last-of-type {
   font-weight: var(--weight-bold);
   margin-left: 1%;
 }
-header > div > span a:first-of-type:hover {
-  transform: scale(1.1);
-}
-header > div > span a:last-of-type:hover {
+header > div > span a:hover {
   transform: scale(1.15);
 }
 
@@ -298,6 +297,29 @@ footer > div ul li:nth-of-type(3) {
   font-weight: var(--weight-light);
 }
 
+/* Arrow Up */
+body > a {
+  position: fixed;
+  bottom: 50px;
+  right: 5%;
+  padding: 2px 5px;
+  color: var(--color-white);
+  font-size: var(--font-medium);
+  background-color: rgba(0, 0, 0, 0.6);
+  border: 1px solid transparent;
+  border-radius: 3px;
+  transition: all 0.3s ease-in-out;
+  opacity: 0;
+  pointer-events: none;
+}
+body > a.arrowUp {
+  opacity: 1;
+  pointer-events: auto;
+}
+body > a:hover {
+  color: var(--color-dark-white);
+}
+
 /* mobile */
 @media screen and (max-width: 767px) {
   /* Navbar hambuger*/
@@ -335,9 +357,6 @@ footer > div ul li:nth-of-type(3) {
   }
   header > div > ul li h2 span {
     font-size: 40px;
-  }
-  header > div > ul li p {
-    width: 240px;
   }
 
   /* Contact */
