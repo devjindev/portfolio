@@ -118,7 +118,7 @@ nav > ul {
 nav > ul li {
   margin-left: 20px;
 }
-/* Nav a animation */
+/* Navbar a animation */
 nav > ul li a {
   font-weight: var(--weight-reaular);
   padding: 3px 10px;
@@ -150,7 +150,7 @@ nav > ul li a:hover:after {
   opacity: 1;
   transform: translateY(0px);
 }
-/* Nav hambuger */
+/* Navbar hambuger */
 nav > div {
   position: absolute;
   right: 5%;
