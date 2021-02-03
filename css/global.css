@@ -175,13 +175,13 @@ nav > div span {
 nav > div span:not(:last-of-type) {
   margin-bottom: 3px;
 }
-nav div.clicked span:first-child {
+nav div.clicked span:nth-of-type(1) {
   transform: translateY(6px) rotate(45deg);
 }
-nav div.clicked span:nth-child(2) {
+nav div.clicked span:nth-of-type(2) {
   transform: scaleX(0);
 }
-nav div.clicked span:last-child {
+nav div.clicked span:nth-of-type(3) {
   transform: translateY(-6px) rotate(-45deg);
 }
 
@@ -306,7 +306,7 @@ footer > div ul li:nth-of-type(3) {
 /* Arrow Up */
 body > a {
   position: fixed;
-  bottom: 50px;
+  bottom: 30px;
   right: 5%;
   padding: 2px 5px;
   color: var(--color-white);

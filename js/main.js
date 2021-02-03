@@ -37,18 +37,6 @@ document.addEventListener('scroll', () => { // document scroll 하면
     home.style.opacity = 1-(window.scrollY/homeHeignt); // home opcity transition
 });
 
-// ⭐ Arrow Up
-// Arrow Up Scroll - 'arrowUp' Class Add to Button
-const arrowUp = document.querySelector('body > a'); // Arrow Up button
-
-document.addEventListener('scroll', () => { // document scroll 하면
-    if(window.scrollY > homeHeignt/2){ // scroll이 home height 보다 크면
-        arrowUp.classList.add('arrowUp'); // button에 class = 'arrowUp' 추가
-    }else{ // 그 외면
-        arrowUp.classList.remove('arrowUp'); // button에 class = 'arrowUp' 삭제
-    }
-});
-
 // ⭐ Skills
 // Skills Btn Click - 'invisible' Class Remove to List
 const skillsBtnContainer = document.querySelector('section.skillsArea > div ul:first-of-type'); // Skills all btn
@@ -77,4 +65,16 @@ skillsBtnContainer.addEventListener('click', (e) => { // 전체 btn 중 하나 c
         });
         skillsListContainer.classList.remove('ani-out');
     }, 300);
+});
+
+// ⭐ Arrow Up
+// Arrow Up Scroll - 'arrowUp' Class Add to Button
+const arrowUp = document.querySelector('body > a'); // Arrow Up button
+
+document.addEventListener('scroll', () => { // document scroll 하면
+    if(window.scrollY > homeHeignt/2){ // scroll이 home height 보다 크면
+        arrowUp.classList.add('arrowUp'); // button에 class = 'arrowUp' 추가
+    }else{ // 그 외면
+        arrowUp.classList.remove('arrowUp'); // button에 class = 'arrowUp' 삭제
+    }
 });
