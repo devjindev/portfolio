@@ -133,7 +133,7 @@ nav > ul li a:after {
   background: rgba(255, 255, 255, 0.5);
   content: "";
   opacity: 0;
-  transition: all 0.3s;
+  transition: all 0.3s ease-in-out;
 }
 nav > ul li a:before {
   top: 0px;
@@ -164,7 +164,7 @@ nav > div span {
   display: block;
   border-top: 3px solid white;
   border-radius: 5px;
-  transition: all 0.3s ease;
+  transition: all 0.3s ease-in-out;
 }
 nav > div span:not(:last-of-type) {
   margin-bottom: 3px;
@@ -227,19 +227,22 @@ header > div > span {
 }
 header > div > span a {
   display: inline-block;
-  transition: all 0.1s ease-in;
+  transition: all 0.1s ease-in-out;
 }
 header > div > span a,
 header > div > span a i {
   color: var(--color-black);
   font-size: 20px;
 }
-header > div > span a:hover {
-  transform: scale(1.1);
-}
 header > div > span a:last-of-type {
   font-weight: var(--weight-bold);
   margin-left: 1%;
+}
+header > div > span a:first-of-type:hover {
+  transform: scale(1.1);
+}
+header > div > span a:last-of-type:hover {
+  transform: scale(1.15);
 }
 
 /* Contact */
@@ -265,6 +268,7 @@ footer > div ul li:nth-of-type(1) a {
   color: var(--color-pink);
   font-size: 40px;
   margin-bottom: 30px;
+  transition: all 0.1s ease-in-out;
 }
 footer > div ul li:nth-of-type(1) a:hover {
   transform: scale(1.1);
@@ -276,7 +280,7 @@ footer > div ul li:nth-of-type(2) a {
 footer > div ul li:nth-of-type(2) a,
 footer > div ul li:nth-of-type(2) a:first-of-type i {
   font-size: 24px;
-  transition: all 0.1s ease-in;
+  transition: all 0.1s ease-in-out;
 }
 footer > div ul li:nth-of-type(2) a:first-of-type:hover i {
   color: #1bbfaf;

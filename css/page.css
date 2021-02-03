@@ -75,7 +75,7 @@ section.skillsArea > div ul:first-of-type li button span {
   top: -20px;
   left: 0;
   opacity: 0;
-  transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in-out;
   color: var(--color-white);
   font-size: var(--font-micro);
   font-weight: var(--weight-light);
@@ -198,7 +198,7 @@ section.projectsArea > ul li a:first-of-type:hover div {
 section.projectsArea > ul li a:first-of-type:hover img,
 section.projectsArea > ul li a:first-of-type:hover div {
   transform: translateY(-10px);
-  transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in-out;
 }
 section.projectsArea > ul li a:first-of-type div * {
   color: var(--color-white);
@@ -231,7 +231,7 @@ section.projectsArea > ul li a:last-of-type i {
 section.projectsArea > ul li a:last-of-type,
 section.projectsArea > ul li a:last-of-type i {
   font-size: var(--font-small);
-  transition: all 0.2s ease;
+  transition: all 0.1s ease-in-out;
 }
 section.projectsArea > ul li a:last-of-type:hover,
 section.projectsArea > ul li a:last-of-type:hover i {
