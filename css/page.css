@@ -55,7 +55,6 @@ section.skillsArea > div ul:first-of-type li button {
   border: 1px solid var(--color-dark-white);
   padding: 5px 0;
   width: 100%;
-  cursor: pointer;
 }
 section.skillsArea > div ul:first-of-type li:first-of-type button {
   border-radius: 4px 0 0 4px;
@@ -63,7 +62,7 @@ section.skillsArea > div ul:first-of-type li:first-of-type button {
 section.skillsArea > div ul:first-of-type li:last-of-type button {
   border-radius: 0 4px 4px 0;
 }
-section.skillsArea > div ul:first-of-type li button.active,
+section.skillsArea > div ul:first-of-type li button.activated,
 section.skillsArea > div ul:first-of-type li button:hover {
   background-color: var(--color-light-blue);
 }
@@ -79,12 +78,12 @@ section.skillsArea > div ul:first-of-type li button span {
   color: var(--color-white);
   font-size: var(--font-micro);
   font-weight: var(--weight-light);
-  background-color: var(--color-purple);
+  background-color: var(--color-pink);
   border-radius: 50%;
   margin-left: 2%;
   padding: 0.7px 0.2px 0 0;
 }
-section.skillsArea > div ul:first-of-type li button.active span,
+section.skillsArea > div ul:first-of-type li button.activated span,
 section.skillsArea > div ul:first-of-type li button:hover span {
   opacity: 1;
   top: -1.4px;
@@ -97,12 +96,21 @@ section.skillsArea > div ul:last-of-type {
   justify-content: center;
   background-color: var(--color-white);
   border-radius: 4px;
+  opacity: 1;
+  transition: all 0.3s ease-in-out;
+}
+section.skillsArea > div ul:last-of-type.ani-out {
+  opacity: 0;
+  transform: scale(0.95);
 }
 section.skillsArea > div ul:last-of-type li {
   display: flex;
   flex-direction: column;
   margin: 20px 2%;
   text-align: center;
+}
+section.skillsArea > div ul:last-of-type li.invisible {
+  display: none;
 }
 section.skillsArea > div ul:last-of-type li i {
   color: var(--color-dark-white);
