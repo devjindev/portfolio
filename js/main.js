@@ -33,3 +33,15 @@ document.addEventListener('scroll', () => { // document에서 scroll 발생했�
 $('nav div').click(function() {
     $(this).toggleClass('is-opened');
 })
+
+// Home Scroll Opacity Transition
+const home = document.querySelector('header > div'); // home
+const homeHeignt = home.getBoundingClientRect().height; // home height
+
+document.addEventListener('scroll', () => { // document에서 scroll 발생했을 때
+    //console.log(window.scrollY);
+    //console.log(`homeHeignt : ${homeHeignt}`);
+    //console.log(1-(window.scrollY/homeHeignt));
+
+    home.style.opacity = 1-(window.scrollY/homeHeignt); // home opcity = 
+});
