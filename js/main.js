@@ -67,6 +67,12 @@ skillsBtnContainer.addEventListener('click', (e) => { // 전체 btn 중 하나 c
     if(filter == null){ // fillter == null이면 반환 (그냥 바로 넘겨줌)
         return;
     }
+
+    const active = document.querySelector('section.skillsArea > div ul:first-of-type li button.selected'); // selected button
+    active.classList.remove('selected'); // 'selected' Class 삭제
+    const target = e.target.nodeName === 'BUTTON' ? e.target : e.target.parentNode; // button 안에 span에도 할당
+    target.classList.add('selected'); // 'selected' Class 추가
+
     skillsListContainer.classList.add('ani-out'); // all list에 'ani-out(애니메이션 삭제)' Class 추가
     setTimeout(()=>{ // 3초 지나면 'ani-out(애니메이션 삭제)' Class 삭제 (다시 애니메이션 작동)
         skillsList.forEach((skillsList) => { // each list 전체 중 각각 가져옴

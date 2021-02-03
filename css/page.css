@@ -62,7 +62,7 @@ section.skillsArea > div ul:first-of-type li:first-of-type button {
 section.skillsArea > div ul:first-of-type li:last-of-type button {
   border-radius: 0 4px 4px 0;
 }
-section.skillsArea > div ul:first-of-type li button.activated,
+section.skillsArea > div ul:first-of-type li button.selected,
 section.skillsArea > div ul:first-of-type li button:hover {
   background-color: var(--color-light-blue);
 }
@@ -80,10 +80,10 @@ section.skillsArea > div ul:first-of-type li button span {
   font-weight: var(--weight-light);
   background-color: var(--color-pink);
   border-radius: 50%;
-  margin-left: 2%;
+  margin-left: 4%;
   padding: 0.7px 0.2px 0 0;
 }
-section.skillsArea > div ul:first-of-type li button.activated span,
+section.skillsArea > div ul:first-of-type li button.selected span,
 section.skillsArea > div ul:first-of-type li button:hover span {
   opacity: 1;
   top: -1.4px;
