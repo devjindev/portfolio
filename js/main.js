@@ -22,12 +22,46 @@ hambuger.addEventListener('click', () => { // hambuger click 하면
     hambuger.classList.toggle('clicked'); // hambuger 'clicked' Class 추가-삭제
     navbarMenu.classList.toggle('opend'); // navbarMenu 'opend' Class 추가-삭제
 });
-
-// Navbar Click Navbar Menu
+/*
+// Navbar Menu Click - 'opend' Class Remove to Navnar Menu
 navbarMenu.addEventListener('click', (e) => {
     navbarMenu.classList.remove('opend');
 });
+*/
+/*
+// Navbar Scroll - Navbar Menu Select *Intersection Observe API*
+const sectionIds = ['#profile', '#skills', '#projects', '#contact']; // 모든 섹션(이동 페이지) 요소
+const sections = sectionIds.map(id => document.querySelector(id)); // 섹션 id
+const navItems = sectionIds.map(id => document.querySelector(`[href="${id}"]`)); // navbar a에 연결한 섹션 id
+let selectedNavItems = navItems[0]; // 현재 스크롤이 위치된 섹션
 
+const observerOptions = { // observer options
+    'root': null, // viewport
+    'rootMargin': '0px', // margin = 0
+    'threshold': 0.3 // scroll 30% 되면 변화 감지
+}
+
+const observerCallback = (entries, observer) => { // observer callback
+    entries.forEach(entry => { // entries(섹션) 각각 하나씩 가져오기 (반복)
+        if(!entry.isIntersecting){ // !(entry가 들어오면) = entry가 나가면
+            const index = sectionIds.indexOf(`#${index.target.id}`);
+            let selectedIndex; // 현재 스크롤이 위치된 섹션
+
+            if(entry.getBoundingClientRect.y < 0){ // 스크롤 아래로 되면
+                selectedIndex = index + 1; // 현재 스크롤이 위치된 섹션 = 다음 섹션으로 넘어감
+            }else{ // 그 외면 (스크롤 위로 되면)
+                selectedIndex = index - 1; // 현재 스크롤이 위치된 섹션 = 이전 섹션으로 넘어감
+            }
+            selectedNavItems.classList.remove('actived'); // 현재 스크롤이 위치된 섹션에 'actived' class 삭제
+            selectedNavItems = navItem[selectedIndex]; // 현재 스크롤이 위치된 섹션에 a 이동 연결
+            selectedNavItems.classList.add('actived'); // 현재 스크롤이 위치된 섹션에 'actived' class 추가
+        }
+    });
+};
+
+const observer = new IntersectionObserver(observerCallback, observerOptions); // observe 생성자 생성
+sections.forEach(section => observer.observe(section)); // observe 실행
+*/
 // ⭐ Home
 // Home Scroll - Opacity Transition
 const home = document.querySelector('header > div'); // home

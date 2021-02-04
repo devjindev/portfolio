@@ -146,8 +146,8 @@ nav > ul li a:after {
   bottom: 0px;
   transform: translateY(-10px);
 }
-nav > ul li a.active:before,
-nav > ul li a.active:after,
+nav > ul li a.actived:before,
+nav > ul li a.actived:after,
 nav > ul li a:hover:before,
 nav > ul li a:hover:after {
   opacity: 1;
