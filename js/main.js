@@ -22,46 +22,50 @@ hambuger.addEventListener('click', () => { // hambuger click 하면
     hambuger.classList.toggle('clicked'); // hambuger 'clicked' Class 추가-삭제
     navbarMenu.classList.toggle('opend'); // navbarMenu 'opend' Class 추가-삭제
 });
-/*
+
 // Navbar Menu Click - 'opend' Class Remove to Navnar Menu
-navbarMenu.addEventListener('click', (e) => {
-    navbarMenu.classList.remove('opend');
+navbarMenu.addEventListener('click', (e) => { // navbar menu click 하면
+    navbarMenu.classList.remove('opend'); // navbarMenu 'opend' Class 삭제
+    hambuger.classList.remove('clicked'); // hambuger 'clicked' Class 삭제
 });
-*/
-/*
+
 // Navbar Scroll - Navbar Menu Select *Intersection Observe API*
-const sectionIds = ['#profile', '#skills', '#projects', '#contact']; // 모든 섹션(이동 페이지) 요소
-const sections = sectionIds.map(id => document.querySelector(id)); // 섹션 id
-const navItems = sectionIds.map(id => document.querySelector(`[href="${id}"]`)); // navbar a에 연결한 섹션 id
-let selectedNavItems = navItems[0]; // 현재 스크롤이 위치된 섹션
+// 1. 모든 섹션 요소들과 메뉴 아이템들을 가지고 온다.
+// 2. IntersectionObserve를 이용해서 모든 섹션들을 관찰한다.
+// 3. 보여지는 섹션에 해당하는 메뉴 아이템을 활성화 시킨다.
 
-const observerOptions = { // observer options
-    'root': null, // viewport
-    'rootMargin': '0px', // margin = 0
-    'threshold': 0.3 // scroll 30% 되면 변화 감지
+// 요소 가져오기
+const sectionIds = ['#profile', '#projects', '#skills', '#contact']; // 모든 섹션들을 가져온다. // 배열 형태
+const sections = sectionIds.map(id => document.querySelector(id)); // 섹션들의 id를 가져온다. // 문자열 형태
+const navItems = sectionIds.map(id => document.querySelector(`nav > ul [href="${id}"]`)); // (섹션들의 id에 해당하는(와 일치하는)) 메뉴 아이템(a)을 가져온다. // 문자열 형태
+
+let selectedNavItem = navItems[0]; // 다음에 선택할 섹션 (이제 현재 섹션) // 일단 맨 처음꺼로 초기화
+
+// observer 생성해서 관찰하기
+const observerOptions = { // observe 옵션
+    root: null,
+    rootMargin: '0px',
+    threshold: 0.3
 }
-
-const observerCallback = (entries, observer) => { // observer callback
-    entries.forEach(entry => { // entries(섹션) 각각 하나씩 가져오기 (반복)
-        if(!entry.isIntersecting){ // !(entry가 들어오면) = entry가 나가면
-            const index = sectionIds.indexOf(`#${index.target.id}`);
-            let selectedIndex; // 현재 스크롤이 위치된 섹션
-
-            if(entry.getBoundingClientRect.y < 0){ // 스크롤 아래로 되면
-                selectedIndex = index + 1; // 현재 스크롤이 위치된 섹션 = 다음 섹션으로 넘어감
-            }else{ // 그 외면 (스크롤 위로 되면)
-                selectedIndex = index - 1; // 현재 스크롤이 위치된 섹션 = 이전 섹션으로 넘어감
+const observerCallback = (entries, observer) => { // observe Callback
+    entries.forEach(entry => {
+        if(!entry.isIntersecting){ // !(현재 위치 섹션을 들어오면) = 현재 위치 섹션을 나가면
+            const index = sectionIds.indexOf(`#${entry.target.id}`); // 현재 위치 섹션의 id의 index를 가져온다.
+            let selectdedIndex; // 다음에 선택할 섹션의 index
+            if(entry.boundingClientRect.y < 0){ // 현재 위치 섹션의 y좌표가 - 면 (아래로 내려간 경우)
+                selectdedIndex = index + 1; // 다음에 선택할 섹션의 index = 현재 위치 섹션의 index + 1 (아래꺼)
+            }else{ // 그 외면 // 현재 위치 섹션의 y좌표가 + 면 (위로 올라간 경우)
+                selectdedIndex = index - 1; // 다음에 선택할 섹션의 index = 현재 위치 섹션의 index - 1 (위에꺼)
             }
-            selectedNavItems.classList.remove('actived'); // 현재 스크롤이 위치된 섹션에 'actived' class 삭제
-            selectedNavItems = navItem[selectedIndex]; // 현재 스크롤이 위치된 섹션에 a 이동 연결
-            selectedNavItems.classList.add('actived'); // 현재 스크롤이 위치된 섹션에 'actived' class 추가
+            selectedNavItem.classList.remove('actived'); // 'actived' class 삭제
+            selectedNavItem = navItems[selectdedIndex]; // 다음에 선택할 섹션(이제 현재 섹션)의 index에 해당하는 메뉴 아이템에
+            selectedNavItem.classList.add('actived'); // 'actived' class 추가
         }
     });
 };
-
 const observer = new IntersectionObserver(observerCallback, observerOptions); // observe 생성자 생성
-sections.forEach(section => observer.observe(section)); // observe 실행
-*/
+sections.forEach(section => observer.observe(section)); // 모든 섹션들을 하나씩 받아와서 관찰
+
 // ⭐ Home
 // Home Scroll - Opacity Transition
 const home = document.querySelector('header > div'); // home
