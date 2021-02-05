@@ -29,6 +29,7 @@ navbarMenu.addEventListener('click', (e) => { // navbar menu click 하면
     hambuger.classList.remove('clicked'); // hambuger 'clicked' Class 삭제
 });
 
+/*
 // Navbar Scroll - Navbar Menu Select *Intersection Observe API*
 // 1. 모든 섹션 요소들과 메뉴 아이템들을 가지고 온다.
 // 2. IntersectionObserve를 이용해서 모든 섹션들을 관찰한다.
@@ -65,6 +66,7 @@ const observerCallback = (entries, observer) => { // observe Callback
 };
 const observer = new IntersectionObserver(observerCallback, observerOptions); // observe 생성자 생성
 sections.forEach(section => observer.observe(section)); // 모든 섹션들을 하나씩 받아와서 관찰
+*/
 
 // ⭐ Home
 // Home Scroll - Opacity Transition
