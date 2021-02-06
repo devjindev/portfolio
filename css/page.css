@@ -78,7 +78,7 @@ section.skillsArea > div ul:first-of-type li button span {
   color: var(--color-white);
   font-size: var(--font-micro);
   font-weight: var(--weight-light);
-  background-color: var(--color-light-blue);
+  background-color: var(--color-blue);
   border-radius: 50%;
   margin-left: 4%;
   padding: 0.7px 0.2px 0 0;
@@ -154,6 +154,7 @@ section.skillsArea > div ul:last-of-type li div.progress {
   line-height: 3px;
   color: var(--color-white);
   background-color: var(--color-light-white);
+  box-shadow: 1px solid black;
 }
 section.skillsArea > div ul:last-of-type li div div.progress-bar {
   font-size: var(--font-micro);
@@ -227,12 +228,12 @@ section.projectsArea > ul li a:last-of-type {
   width: 80px;
   margin: 0 auto;
   padding: 7px 0;
-  background-color: transparent;
+  background-color: var(--color-blue);
+  color: var(--color-white);
   font-size: var(--font-small);
   font-weight: var(--weight-light);
   text-align: center;
-  border: 1px solid var(--color-dark-grey);
-  border-radius: 3px;
+  border-radius: 1px;
 }
 section.projectsArea > ul li a:last-of-type i {
   margin-left: 1%;
@@ -242,12 +243,8 @@ section.projectsArea > ul li a:last-of-type i {
   font-size: var(--font-small);
   transition: all 0.1s ease-in-out;
 }
-section.projectsArea > ul li a:last-of-type:hover,
-section.projectsArea > ul li a:last-of-type:hover i {
-  color: var(--color-white);
-}
 section.projectsArea > ul li a:last-of-type:hover {
-  background-color: var(--color-dark-grey);
+  background-color: var(--color-light-grey);
 }
 
 /* tablet */
