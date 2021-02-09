@@ -100,9 +100,22 @@ nav {
   background-color: transparent;
   transition: all 0.3s ease-in-out;
 }
+/* Navbar scroll */
 nav.scrolled {
   padding-top: 13px;
-  background-color: rgba(0, 0, 0, 0.5);
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: saturate(180%) blur(15px);
+}
+nav.scrolled > h1 a,
+nav.scrolled > ul li a {
+  color: var(--color-black);
+}
+nav.scrolled > ul li a:before,
+nav.scrolled > ul li a:after {
+  background: rgba(0, 0, 0, 0.3);
+}
+nav.scrolled > div span {
+  border-top: 3px solid var(--color-black);
 }
 nav * {
   color: var(--color-white);
@@ -378,9 +391,6 @@ footer > span a i:hover {
   }
   nav.scrolled {
     padding: 15px 5%;
-  }
-  nav.scrolled ul {
-    background-color: transparent;
   }
   nav > ul {
     flex-flow: column nowrap;
