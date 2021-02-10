@@ -104,6 +104,9 @@ nav {
 nav.scrolled {
   padding-top: 13px;
   background: rgba(255, 255, 255, 0.1);
+  -webkit-backdrop-filter: saturate(180%) blur(15px);
+  -moz-backdrop-filter: saturate(180%) blur(15px);
+  -o-backdrop-filter: saturate(180%) blur(15px);
   backdrop-filter: saturate(180%) blur(15px);
 }
 nav.scrolled > h1 a,
@@ -293,7 +296,6 @@ footer {
   padding: 30px 0;
 }
 footer > div {
-  max-width: 1320px;
   height: 220px;
   position: relative;
   margin-bottom: 20px;
@@ -419,9 +421,25 @@ footer > span a i:hover {
   }
 
   /* Contact */
+  footer {
+    padding: 30px 0;
+    background-color: var(--color-black);
+  }
+  footer > div {
+    height: 170px;
+  }
+  footer > div > div {
+    height: 150px;
+  }
   footer > div > div:nth-of-type(1) {
     left: 10%;
     width: 80%;
+  }
+  footer > div > div:nth-of-type(1) span:first-of-type {
+    line-height: 75px;
+  }
+  footer > div > div:nth-of-type(1) span:last-of-type {
+    line-height: 75px;
   }
   footer > div > div:nth-of-type(2) {
     left: 11%;
