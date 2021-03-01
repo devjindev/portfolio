@@ -17,5 +17,4 @@
 * Blog : [진개발연구소](https://devjindev.tistory.com/)  
 
 ## 📝 License
-Copyright © 2020 Hong Yujin.  
-This project is MIT licensed.
+[MIT](https://github.com/devjindev/portfolio/blob/master/LICENSE) © Yujin Hong
