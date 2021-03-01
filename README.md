@@ -17,4 +17,4 @@
 * Blog : [진개발연구소](https://devjindev.tistory.com/)  
 
 ## 📝 License
-[MIT](https://github.com/devjindev/portfolio/blob/master/LICENSE) © Richard Littauer
+[MIT](https://github.com/devjindev/portfolio/blob/master/LICENSE) © Yujin Hong
