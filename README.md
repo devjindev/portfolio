@@ -2,6 +2,7 @@
 ![](https://img.shields.io/badge/-HTML-orange)
 ![](https://img.shields.io/badge/-CSS-blue)
 ![](https://img.shields.io/badge/-JavaScript-yellow)  
+
 `홍유진의 포트폴리오 사이트입니다.`  
 
 ## ✨ Preview
