@@ -38,8 +38,7 @@ body {
   font-family: "Roboto", sans-serif;
 }
 body *::selection {
-  background-color: var(--color-black);
-  color: var(--color-white);
+  background-color: #e4e4e4;
 }
 a {
   display: block;
@@ -244,9 +243,10 @@ header > div > ul li h2 span {
 header > div > ul li p {
   width: 230px;
   margin: 0 auto;
-  color: rgba(0, 0, 0, 0.5);
+  color: var(--color-white);
   font-size: var(--font-small);
-  line-height: 24px;
+  font-weight: var(--weight-light);
+  line-height: 22px;
   background-color: rgba(255, 255, 255, 0.2);
   font-family: "Roboto Slab", serif;
   letter-spacing: -1px;
@@ -302,7 +302,7 @@ body > a:hover {
 footer {
   background: url("../images/bg_02.jpg") no-repeat center/cover;
   background-attachment: fixed;
-  padding: 40px 0;
+  padding: 50px 0 20px;
   font-size: var(--font-medium);
 }
 footer > div {
@@ -376,6 +376,7 @@ footer > div > div:nth-of-type(1) span:last-of-type a i:hover {
 footer > span {
   display: block;
   text-align: center;
+  margin-bottom: 30px;
 }
 footer > span a,
 footer > span a i {
@@ -390,6 +391,17 @@ footer > span a:last-of-type {
 footer > span a:hover,
 footer > span a i:hover {
   color: var(--color-light-blue);
+}
+footer > p {
+  color: var(--color-light-grey);
+  font-size: var(--font-small);
+  text-align: center;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
 /* mobile */
