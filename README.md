@@ -1,7 +1,7 @@
 # Portfolio
 ![](https://img.shields.io/badge/-HTML-F1662B)
 ![](https://img.shields.io/badge/-CSS-2FA9DC)
-![](https://img.shields.io/badge/-JavaScript-F0BF25)  
+![](https://img.shields.io/badge/-JavaScript-yellow)  
 
 `홍유진의 포트폴리오 사이트입니다.`  
 
