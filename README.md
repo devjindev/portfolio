@@ -20,4 +20,4 @@
 Copyright © 2020 Hong Yujin.  
 This project is MIT licensed.
 
-<span style="color: red;">하염</span>
+<span style="text-align: center;">하염</span>
