@@ -7,15 +7,13 @@
   --color-light-grey: #7c7979;
   --color-grey: #616161;
   --color-dark-grey: #4d4d4d;
-  --color-black: #212529;
-  --color-yellow: #fff1ac;
-  --color-light-pink: #f2c6b6;
-  --color-pink: #d96459;
-  --color-light-blue: #c2dcf2;
-  --color-blue: #6595bf;
+  --color-black: #000000;
+  --color-pink: #ffc9c9;
+  --color-light-blue: #c4e5f2;
+  --color-blue: #163040;
 
   /* Font size */
-  --font-large: 48px;
+  --font-large: 64px;
   --font-medium: 28px;
   --font-regular: 16px;
   --font-small: 14px;
@@ -37,11 +35,11 @@ body {
 }
 body {
   box-sizing: border-box;
-  font-family: "Roboto";
+  font-family: "Roboto", sans-serif;
 }
 body *::selection {
-  background-color: var(--color-yellow);
-  color: var(--color-black);
+  background-color: var(--color-black);
+  color: var(--color-white);
 }
 a {
   display: block;
@@ -56,11 +54,6 @@ ul {
 }
 
 /* Typotgraphy */
-section.homeArea > div > ul li h2,
-section.homeArea > div > ul li h2 span,
-section.profileArea > figure figcaption dl dt span:first-of-type {
-  font-family: "Nanum Gothic";
-}
 body > :not(#home, #contact) h2 {
   font-size: var(--font-medium);
   font-weight: var(--weight-bold);
@@ -72,16 +65,18 @@ body > :not(#home, #contact) h2 {
 body > * {
   overflow: auto;
 }
-body > header,
-body > section {
-  height: 100%;
-}
 section.profileArea,
 section.skillsArea > div,
 section.projectsArea {
   max-width: 1320px;
   margin: 0 auto;
   padding: 60px 5%;
+}
+header > div > ul li h2,
+header > div > ul li h2 span,
+section.profileArea > figure figcaption dl dt span:first-of-type,
+section.projectsArea > ul li a:first-of-type div {
+  font-family: "Noto Sans KR", sans-serif;
 }
 
 /* Navbar */
@@ -201,68 +196,82 @@ nav div.clicked span:nth-of-type(3) {
   transform: translateY(-6px) rotate(-45deg);
 }
 
-/* Home */
+/* header */
 header {
-  background: url("../images/bg_04.jpg") no-repeat center/cover;
+  background: url("../images/bg_01.jpg") no-repeat center/cover;
   background-attachment: fixed;
+  height: 100vh;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 header > div {
   max-width: 1320px;
   margin: 0 auto;
-  padding: 130px 0 30px;
+  padding: 0 0 60px 0;
+  height: 100vh;
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
 }
-/* Home ul */
+/* header ul */
 header > div > ul li i {
   color: rgba(0, 0, 0, 0.7);
   font-size: var(--font-medium);
-  margin-bottom: 50px;
+  margin-bottom: 30px;
+}
+header > div > ul li h2,
+header > div > ul li h2 span {
+  color: var(--color-white);
+  font-size: var(--font-large);
+  font-weight: var(--weight-bold);
+  line-height: 84px;
+  letter-spacing: -1px;
 }
 header > div > ul li h2 {
-  color: var(--color-white);
-  font-size: 52px;
-  font-weight: var(--weight-bold);
-  line-height: 63px;
-  letter-spacing: -1px;
-  margin-bottom: 30px;
+  margin-bottom: 50px;
 }
 header > div > ul li h2 span {
   color: var(--color-white);
-  font-size: 52px;
-  font-weight: var(--weight-bold);
-  line-height: 63px;
-  letter-spacing: -1px;
-  background-color: rgba(0, 0, 0, 0.6);
+  font-weight: 900px;
 }
 header > div > ul li p {
   width: 230px;
   margin: 0 auto;
-  color: rgba(0, 0, 0, 0.7);
-  font-size: var(--font-micro);
-  line-height: 18px;
-  margin-bottom: 145px;
+  color: rgba(0, 0, 0, 0.5);
+  font-size: var(--font-small);
+  line-height: 24px;
   background-color: rgba(255, 255, 255, 0.2);
-  font-family: "Roboto Mono";
+  font-family: "Roboto Slab", serif;
   letter-spacing: -1px;
+  /* margin-bottom: 90px; */
 }
-/* Home url */
+/* header sns */
 header > div > span {
-  display: block;
+  display: flex;
+  position: absolute;
+  bottom: 60px;
 }
 header > div > span a,
 header > div > span a i {
   display: inline-block;
   transition: all 0.1s ease-in-out;
   color: rgba(0, 0, 0, 0.7);
-  font-size: 20px;
+  font-size: 28px;
 }
 header > div > span a:last-of-type {
   font-weight: var(--weight-bold);
-  margin-left: 1%;
+  margin-left: 25px;
 }
 header > div > span a:hover,
 header > div > span a i:hover {
-  color: var(--color-pink);
+  color: var(--color-light-blue);
 }
 
 /* Arrow Up */
@@ -286,14 +295,15 @@ body > a.arrowUp {
   pointer-events: auto;
 }
 body > a:hover {
-  color: var(--color-light-grey);
+  color: var(--color-dark-white);
 }
 
-/* Contact */
+/*? footer */
 footer {
-  background: url("../images/bg_11.png") no-repeat center/cover;
+  background: url("../images/bg_02.jpg") no-repeat center/cover;
   background-attachment: fixed;
-  padding: 30px 0;
+  padding: 40px 0;
+  font-size: var(--font-medium);
 }
 footer > div {
   height: 220px;
@@ -327,41 +337,42 @@ footer > div > div:nth-of-type(3) {
   background-color: var(--color-light-grey);
   z-index: 1;
 }
-/* Contact Contents */
+/* footer Contents */
 footer > div > div:nth-of-type(1) span {
   display: block;
 }
 footer > div > div:nth-of-type(1) span:first-of-type {
   padding: 0 5%;
   line-height: 100px;
-  font-size: 2.3vw;
   font-weight: var(--weight-bold);
   background-color: transparent;
 }
 footer > div > div:nth-of-type(1) span:last-of-type {
+  display: flex;
+  justify-content: space-between;
   padding: 0 0 0 5%;
   line-height: 100px;
-  font-size: 2.3vw;
   background-color: var(--color-light-white);
   border-radius: 0 0 15px 15px;
   display: flex;
+  font-size: 2vw;
 }
 footer > div > div:nth-of-type(1) span:last-of-type a {
-  width: 100%;
+  width: 20%;
   margin-left: 5%;
   background-color: var(--color-light-blue);
   border-radius: 0 0 15px 0;
   text-align: center;
+  font-size: var(--font-medium);
 }
 footer > div > div:nth-of-type(1) span:last-of-type a i {
-  color: var(--color-blue);
-  font-size: 2.3vw;
   transition: all 0.1s ease-in-out;
+  color: var(--color-blue);
 }
 footer > div > div:nth-of-type(1) span:last-of-type a i:hover {
   color: var(--color-grey);
 }
-/* Contact sns */
+/* footer sns */
 footer > span {
   display: block;
   text-align: center;
@@ -370,20 +381,23 @@ footer > span a,
 footer > span a i {
   display: inline-block;
   transition: all 0.1s ease-in-out;
-  color: var(--color-light-white);
-  font-size: 24px;
+  color: var(--color-white);
 }
 footer > span a:last-of-type {
   font-weight: var(--weight-bold);
-  margin-left: 1%;
+  margin-left: 20px;
 }
 footer > span a:hover,
 footer > span a i:hover {
-  color: var(--color-pink);
+  color: var(--color-light-blue);
 }
 
 /* mobile */
 @media screen and (max-width: 767px) {
+  :root {
+    /* Font size */
+    --font-large: 52px;
+  }
   /* Navbar hambuger*/
   nav {
     flex-flow: column nowrap;
@@ -413,50 +427,46 @@ footer > span a i:hover {
 
   /* Home */
   header > div > ul li h2 {
-    font-size: 40px;
-    line-height: 55px;
-  }
-  header > div > ul li h2 span {
-    font-size: 40px;
+    line-height: 72px;
   }
 
-  /* Contact */
+  /*? footer */
   footer {
-    padding: 30px 0;
-    background-color: var(--color-black);
+    padding: 20px 0;
+    font-size: 24px;
   }
   footer > div {
-    height: 170px;
+    height: 140px;
   }
   footer > div > div {
-    height: 150px;
+    height: 120px;
   }
   footer > div > div:nth-of-type(1) {
     left: 10%;
     width: 80%;
   }
   footer > div > div:nth-of-type(1) span:first-of-type {
-    line-height: 75px;
+    line-height: 60px;
   }
   footer > div > div:nth-of-type(1) span:last-of-type {
-    line-height: 75px;
+    line-height: 60px;
+    font-size: var(--font-small);
+  }
+  footer > div > div:nth-of-type(1) span:last-of-type a {
+    font-size: 24px;
   }
   footer > div > div:nth-of-type(2) {
+    top: 8px;
     left: 11%;
     width: 78%;
   }
   footer > div > div:nth-of-type(3) {
+    top: 16px;
     left: 12%;
     width: 76%;
   }
-  /* Contact Contents */
-  footer > div > div:nth-of-type(1) span:first-of-type {
-    font-size: 5vw;
-  }
-  footer > div > div:nth-of-type(1) span:last-of-type {
-    font-size: 5vw;
-  }
-  footer > div > div:nth-of-type(1) span:last-of-type a i {
-    font-size: 5vw;
+  /* footer sns */
+  footer > span a:last-of-type {
+    margin-left: 10px;
   }
 }

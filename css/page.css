@@ -12,23 +12,24 @@ section.profileArea > figure img {
 section.profileArea > figure figcaption {
   width: 53%;
   margin-left: 5%;
-  padding: 3% 0;
+  padding: 30px 0;
 }
 section.profileArea > figure figcaption dl dt {
-  margin-bottom: 25px;
+  margin-bottom: 30px;
 }
-section.profileArea > figure figcaption dl dt span:first-of-type {
-  font-size: 20px;
+section.profileArea > figure figcaption dl dt span {
   font-weight: var(--weight-reaular);
 }
+section.profileArea > figure figcaption dl dt span:first-of-type {
+  font-size: 24px;
+}
 section.profileArea > figure figcaption dl dt span:last-of-type {
-  font-weight: var(--weight-light);
+  font-size: 18px;
   margin-left: 1%;
 }
 section.profileArea > figure figcaption dl dd p {
-  font-size: var(--font-small);
   font-weight: var(--weight-light);
-  line-height: 16px;
+  line-height: 18px;
 }
 section.profileArea > figure figcaption dl dd p:not(:last-of-type) {
   margin-bottom: 15px;
@@ -64,7 +65,7 @@ section.skillsArea > div ul:first-of-type li:last-of-type button {
 }
 section.skillsArea > div ul:first-of-type li button.selected,
 section.skillsArea > div ul:first-of-type li button:hover {
-  background-color: var(--color-light-pink);
+  background-color: var(--color-pink);
 }
 section.skillsArea > div ul:first-of-type li button span {
   display: inline-block;
@@ -172,14 +173,15 @@ section.projectsArea > ul li {
   max-width: 356px;
   margin: 0 1%;
 }
-section.projectsArea > ul li:not(:last-of-type) {
-  margin-bottom: 30px;
-}
 
 /* Projects content */
 section.projectsArea > ul li a:first-of-type {
   position: relative;
   margin-bottom: 20px;
+}
+section.projectsArea > ul li a:first-of-type img,
+section.projectsArea > ul li a:first-of-type div {
+  transition: all 0.3s ease-in-out;
 }
 section.projectsArea > ul li a:first-of-type img {
   display: block;
@@ -207,13 +209,11 @@ section.projectsArea > ul li a:first-of-type:hover div {
 section.projectsArea > ul li a:first-of-type:hover img,
 section.projectsArea > ul li a:first-of-type:hover div {
   transform: translateY(-10px);
-  transition: all 0.3s ease-in-out;
 }
 section.projectsArea > ul li a:first-of-type div * {
   color: var(--color-white);
 }
 section.projectsArea > ul li a:first-of-type div h3 {
-  color: var(--color-yellow);
   font-size: 26px;
   line-height: 32px;
   margin-bottom: 12px;
@@ -244,7 +244,7 @@ section.projectsArea > ul li a:last-of-type i {
   transition: all 0.1s ease-in-out;
 }
 section.projectsArea > ul li a:last-of-type:hover {
-  background-color: var(--color-light-grey);
+  background-color: var(--color-grey);
 }
 
 /* tablet */
@@ -283,5 +283,10 @@ section.projectsArea > ul li a:last-of-type:hover {
   }
   section.skillsArea > div ul:first-of-type li button span {
     display: none;
+  }
+
+  /* projects */
+  section.projectsArea > ul li:not(:last-of-type) {
+    margin-bottom: 30px;
   }
 }
