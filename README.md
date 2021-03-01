@@ -1,4 +1,5 @@
 # Portfolio
+https://img.shields.io/badge/HTML-orange
 `홍유진의 포트폴리오 사이트입니다.`  
 
 ## ✨ Preview
