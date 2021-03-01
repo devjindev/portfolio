@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # <span style="color:red">Portfolio</span>
 
 ```html
@@ -7,12 +8,38 @@
 <span style="color:red">내용</span>
 
 #### ✨ 홍유진의 포트폴리오 사이트입니다.
+=======
+# Portfolio
+![](https://img.shields.io/badge/-HTML5-F1662B)
+![](https://img.shields.io/badge/-CSS3-2FA9DC)
+![](https://img.shields.io/badge/-JavaScript-E3A127)  
+>>>>>>> ada9279a642384cb82253114769fd1f2e12a1ac1
 
-![portfolio-demo](https://user-images.githubusercontent.com/74370531/109523288-87907e00-7af2-11eb-8063-eff9f16fb77b.jpg)
+`홍유진의 포트폴리오 사이트입니다.`  
 
+<<<<<<< HEAD
 ## Contents
 
 - Plofile
 - Skills
 - Projects
 - Contact
+=======
+## ✨ Preview
+![portfolio-demo](https://user-images.githubusercontent.com/74370531/109523288-87907e00-7af2-11eb-8063-eff9f16fb77b.jpg)  
+
+## 📖 Contents
+* Plofile 
+* Skills
+* Projects
+* Contact  
+
+## 👤 Author
+**Yujin Hong**
+* Email : hongyujin0216@gmail.com
+* Github : [@devjindev](https://github.com/devjindev)
+* Blog : [진개발연구소](https://devjindev.tistory.com/)  
+
+## 📝 License
+[MIT](https://github.com/devjindev/portfolio/blob/master/LICENSE) © Yujin Hong
+>>>>>>> ada9279a642384cb82253114769fd1f2e12a1ac1
