@@ -6,7 +6,7 @@
 `홍유진의 포트폴리오 사이트입니다.`  
 
 ## ✨ Preview
-![preview](![preview](https://user-images.githubusercontent.com/74370531/109706966-f21de880-7bdc-11eb-8c7e-87cae96967f5.JPG)  
+![preview](https://user-images.githubusercontent.com/74370531/109706966-f21de880-7bdc-11eb-8c7e-87cae96967f5.JPG)  
 
 ## 📖 Contents
 * Plofile 
