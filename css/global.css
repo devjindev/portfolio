@@ -241,7 +241,7 @@ header > div > ul li h2 span {
   font-weight: 900px;
 }
 header > div > ul li p {
-  width: 230px;
+  width: 250px;
   margin: 0 auto;
   color: var(--color-white);
   font-size: var(--font-small);
@@ -249,8 +249,6 @@ header > div > ul li p {
   line-height: 22px;
   background-color: rgba(255, 255, 255, 0.2);
   font-family: "Roboto Slab", serif;
-  letter-spacing: -1px;
-  /* margin-bottom: 90px; */
 }
 /* header sns */
 header > div > span {
@@ -408,7 +406,7 @@ footer > p {
 @media screen and (max-width: 767px) {
   :root {
     /* Font size */
-    --font-large: 52px;
+    --font-large: 45px;
   }
   /* Navbar hambuger*/
   nav {
@@ -439,7 +437,12 @@ footer > p {
 
   /* Home */
   header > div > ul li h2 {
-    line-height: 72px;
+    line-height: 55px;
+  }
+  header > div > ul li p {
+    width: 200px;
+    font-size: var(--font-micro);
+    line-height: 20px;
   }
 
   /*? footer */
@@ -480,5 +483,8 @@ footer > p {
   /* footer sns */
   footer > span a:last-of-type {
     margin-left: 10px;
+  }
+  footer > p {
+    font-size: var(--font-micro);
   }
 }
